@@ -1,0 +1,628 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		99804249225BF7E90008B67F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99804248225BF7E90008B67F /* AppDelegate.swift */; };
+		9980424B225BF7E90008B67F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980424A225BF7E90008B67F /* ViewController.swift */; };
+		9980424E225BF7E90008B67F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9980424C225BF7E90008B67F /* Main.storyboard */; };
+		99804250225BF7F10008B67F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9980424F225BF7F10008B67F /* Assets.xcassets */; };
+		99804253225BF7F10008B67F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99804251225BF7F10008B67F /* LaunchScreen.storyboard */; };
+		99804258225BF7F10008B67F /* WristQuiz WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 99804257225BF7F10008B67F /* WristQuiz WatchKit App.app */; };
+		9980425E225BF7F10008B67F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9980425C225BF7F10008B67F /* Interface.storyboard */; };
+		99804260225BF7F30008B67F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9980425F225BF7F30008B67F /* Assets.xcassets */; };
+		99804267225BF7F40008B67F /* WristQuiz WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 99804266225BF7F40008B67F /* WristQuiz WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		9980426C225BF7F40008B67F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980426B225BF7F40008B67F /* InterfaceController.swift */; };
+		9980426E225BF7F40008B67F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980426D225BF7F40008B67F /* ExtensionDelegate.swift */; };
+		99804270225BF7F40008B67F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980426F225BF7F40008B67F /* NotificationController.swift */; };
+		99804272225BF7F50008B67F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99804271225BF7F50008B67F /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		99804259225BF7F10008B67F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9980423D225BF7E90008B67F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99804256225BF7F10008B67F;
+			remoteInfo = "WristQuiz WatchKit App";
+		};
+		99804268225BF7F40008B67F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9980423D225BF7E90008B67F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 99804265225BF7F40008B67F;
+			remoteInfo = "WristQuiz WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		9980427A225BF7F50008B67F /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				99804267225BF7F40008B67F /* WristQuiz WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9980427E225BF7F50008B67F /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				99804258225BF7F10008B67F /* WristQuiz WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		99804245225BF7E90008B67F /* WristQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WristQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99804248225BF7E90008B67F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9980424A225BF7E90008B67F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9980424D225BF7E90008B67F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9980424F225BF7F10008B67F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99804252225BF7F10008B67F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		99804254225BF7F10008B67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99804257225BF7F10008B67F /* WristQuiz WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WristQuiz WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9980425D225BF7F10008B67F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		9980425F225BF7F30008B67F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99804261225BF7F40008B67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99804266225BF7F40008B67F /* WristQuiz WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WristQuiz WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9980426B225BF7F40008B67F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		9980426D225BF7F40008B67F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		9980426F225BF7F40008B67F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		99804271225BF7F50008B67F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		99804273225BF7F50008B67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99804274225BF7F50008B67F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		99804242225BF7E90008B67F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99804263225BF7F40008B67F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9980423C225BF7E90008B67F = {
+			isa = PBXGroup;
+			children = (
+				99804247225BF7E90008B67F /* WristQuiz */,
+				9980425B225BF7F10008B67F /* WristQuiz WatchKit App */,
+				9980426A225BF7F40008B67F /* WristQuiz WatchKit Extension */,
+				99804246225BF7E90008B67F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		99804246225BF7E90008B67F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				99804245225BF7E90008B67F /* WristQuiz.app */,
+				99804257225BF7F10008B67F /* WristQuiz WatchKit App.app */,
+				99804266225BF7F40008B67F /* WristQuiz WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		99804247225BF7E90008B67F /* WristQuiz */ = {
+			isa = PBXGroup;
+			children = (
+				99804248225BF7E90008B67F /* AppDelegate.swift */,
+				9980424A225BF7E90008B67F /* ViewController.swift */,
+				9980424C225BF7E90008B67F /* Main.storyboard */,
+				9980424F225BF7F10008B67F /* Assets.xcassets */,
+				99804251225BF7F10008B67F /* LaunchScreen.storyboard */,
+				99804254225BF7F10008B67F /* Info.plist */,
+			);
+			path = WristQuiz;
+			sourceTree = "<group>";
+		};
+		9980425B225BF7F10008B67F /* WristQuiz WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				9980425C225BF7F10008B67F /* Interface.storyboard */,
+				9980425F225BF7F30008B67F /* Assets.xcassets */,
+				99804261225BF7F40008B67F /* Info.plist */,
+			);
+			path = "WristQuiz WatchKit App";
+			sourceTree = "<group>";
+		};
+		9980426A225BF7F40008B67F /* WristQuiz WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				9980426B225BF7F40008B67F /* InterfaceController.swift */,
+				9980426D225BF7F40008B67F /* ExtensionDelegate.swift */,
+				9980426F225BF7F40008B67F /* NotificationController.swift */,
+				99804271225BF7F50008B67F /* Assets.xcassets */,
+				99804273225BF7F50008B67F /* Info.plist */,
+				99804274225BF7F50008B67F /* PushNotificationPayload.apns */,
+			);
+			path = "WristQuiz WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		99804244225BF7E90008B67F /* WristQuiz */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9980427F225BF7F50008B67F /* Build configuration list for PBXNativeTarget "WristQuiz" */;
+			buildPhases = (
+				99804241225BF7E90008B67F /* Sources */,
+				99804242225BF7E90008B67F /* Frameworks */,
+				99804243225BF7E90008B67F /* Resources */,
+				9980427E225BF7F50008B67F /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9980425A225BF7F10008B67F /* PBXTargetDependency */,
+			);
+			name = WristQuiz;
+			productName = WristQuiz;
+			productReference = 99804245225BF7E90008B67F /* WristQuiz.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99804256225BF7F10008B67F /* WristQuiz WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9980427B225BF7F50008B67F /* Build configuration list for PBXNativeTarget "WristQuiz WatchKit App" */;
+			buildPhases = (
+				99804255225BF7F10008B67F /* Resources */,
+				9980427A225BF7F50008B67F /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				99804269225BF7F40008B67F /* PBXTargetDependency */,
+			);
+			name = "WristQuiz WatchKit App";
+			productName = "WristQuiz WatchKit App";
+			productReference = 99804257225BF7F10008B67F /* WristQuiz WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		99804265225BF7F40008B67F /* WristQuiz WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99804277225BF7F50008B67F /* Build configuration list for PBXNativeTarget "WristQuiz WatchKit Extension" */;
+			buildPhases = (
+				99804262225BF7F40008B67F /* Sources */,
+				99804263225BF7F40008B67F /* Frameworks */,
+				99804264225BF7F40008B67F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "WristQuiz WatchKit Extension";
+			productName = "WristQuiz WatchKit Extension";
+			productReference = 99804266225BF7F40008B67F /* WristQuiz WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9980423D225BF7E90008B67F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Cory Knapp";
+				TargetAttributes = {
+					99804244225BF7E90008B67F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					99804256225BF7F10008B67F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					99804265225BF7F40008B67F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 99804240225BF7E90008B67F /* Build configuration list for PBXProject "WristQuiz" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9980423C225BF7E90008B67F;
+			productRefGroup = 99804246225BF7E90008B67F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				99804244225BF7E90008B67F /* WristQuiz */,
+				99804256225BF7F10008B67F /* WristQuiz WatchKit App */,
+				99804265225BF7F40008B67F /* WristQuiz WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		99804243225BF7E90008B67F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99804253225BF7F10008B67F /* LaunchScreen.storyboard in Resources */,
+				99804250225BF7F10008B67F /* Assets.xcassets in Resources */,
+				9980424E225BF7E90008B67F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99804255225BF7F10008B67F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99804260225BF7F30008B67F /* Assets.xcassets in Resources */,
+				9980425E225BF7F10008B67F /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99804264225BF7F40008B67F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99804272225BF7F50008B67F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		99804241225BF7E90008B67F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9980424B225BF7E90008B67F /* ViewController.swift in Sources */,
+				99804249225BF7E90008B67F /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99804262225BF7F40008B67F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99804270225BF7F40008B67F /* NotificationController.swift in Sources */,
+				9980426E225BF7F40008B67F /* ExtensionDelegate.swift in Sources */,
+				9980426C225BF7F40008B67F /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9980425A225BF7F10008B67F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99804256225BF7F10008B67F /* WristQuiz WatchKit App */;
+			targetProxy = 99804259225BF7F10008B67F /* PBXContainerItemProxy */;
+		};
+		99804269225BF7F40008B67F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 99804265225BF7F40008B67F /* WristQuiz WatchKit Extension */;
+			targetProxy = 99804268225BF7F40008B67F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9980424C225BF7E90008B67F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9980424D225BF7E90008B67F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		99804251225BF7F10008B67F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				99804252225BF7F10008B67F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9980425C225BF7F10008B67F /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9980425D225BF7F10008B67F /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		99804275225BF7F50008B67F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		99804276225BF7F50008B67F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		99804278225BF7F50008B67F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S39RJSR774;
+				INFOPLIST_FILE = "WristQuiz WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cory-knapp.WristQuiz.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		99804279225BF7F50008B67F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S39RJSR774;
+				INFOPLIST_FILE = "WristQuiz WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cory-knapp.WristQuiz.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		9980427C225BF7F50008B67F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S39RJSR774;
+				IBSC_MODULE = WristQuiz_WatchKit_Extension;
+				INFOPLIST_FILE = "WristQuiz WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "cory-knapp.WristQuiz.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Debug;
+		};
+		9980427D225BF7F50008B67F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S39RJSR774;
+				IBSC_MODULE = WristQuiz_WatchKit_Extension;
+				INFOPLIST_FILE = "WristQuiz WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "cory-knapp.WristQuiz.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 5.1;
+			};
+			name = Release;
+		};
+		99804280225BF7F50008B67F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S39RJSR774;
+				INFOPLIST_FILE = WristQuiz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cory-knapp.WristQuiz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		99804281225BF7F50008B67F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S39RJSR774;
+				INFOPLIST_FILE = WristQuiz/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "cory-knapp.WristQuiz";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		99804240225BF7E90008B67F /* Build configuration list for PBXProject "WristQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99804275225BF7F50008B67F /* Debug */,
+				99804276225BF7F50008B67F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99804277225BF7F50008B67F /* Build configuration list for PBXNativeTarget "WristQuiz WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99804278225BF7F50008B67F /* Debug */,
+				99804279225BF7F50008B67F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9980427B225BF7F50008B67F /* Build configuration list for PBXNativeTarget "WristQuiz WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9980427C225BF7F50008B67F /* Debug */,
+				9980427D225BF7F50008B67F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9980427F225BF7F50008B67F /* Build configuration list for PBXNativeTarget "WristQuiz" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99804280225BF7F50008B67F /* Debug */,
+				99804281225BF7F50008B67F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9980423D225BF7E90008B67F /* Project object */;
+}
