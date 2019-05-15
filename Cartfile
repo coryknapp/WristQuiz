@@ -1,0 +1,2 @@
+# for parsing data from wikipedia
+github "scinfu/SwiftSoup" ~>1.7.4

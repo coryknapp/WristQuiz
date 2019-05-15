@@ -1,16 +1,78 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14256" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14460.31" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KeV-qd-og0" pageOrientation="vertical">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14243"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14219"/>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="14460.16"/>
     </dependencies>
     <scenes>
-        <!--Interface Controller-->
+        <!--ThreeOptionInterfaceController-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModuleProvider="target"/>
+                <controller identifier="ThreeOptionInterfaceController" fullBounds="YES" fullScreen="YES" id="AgC-eL-Hgc" customClass="ThreeOptionInterfaceController" customModule="WristQuiz_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="ueU-1d-w7I">
+                            <items>
+                                <label width="1" alignment="left" text="Q?" textAlignment="left" numberOfLines="8" id="hW8-Ud-96A">
+                                    <color key="textColor" red="0.0" green="1" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="TAJ-sE-dhC">
+                            <color key="color" red="0.0" green="1" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <button width="1" alignment="left" title="Next" id="YHA-GF-iYt">
+                            <connections>
+                                <action selector="firstButtonPressed" destination="AgC-eL-Hgc" id="RkQ-rc-Mm2"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Next" id="ThL-02-kxR">
+                            <connections>
+                                <action selector="secondButtonPressed" destination="AgC-eL-Hgc" id="FGi-nj-Xyg"/>
+                            </connections>
+                        </button>
+                        <button width="1" alignment="left" title="Next" id="SLT-10-qye">
+                            <connections>
+                                <action selector="thirdButtonPressed" destination="AgC-eL-Hgc" id="zMG-by-WCC"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="firstButton" destination="YHA-GF-iYt" id="E9D-24-5Fd"/>
+                        <outlet property="questionField" destination="hW8-Ud-96A" id="5dR-jk-NoO"/>
+                        <outlet property="secondButton" destination="ThL-02-kxR" id="whC-Pk-pj0"/>
+                        <outlet property="thirdButton" destination="SLT-10-qye" id="zla-DS-aGu"/>
+                    </connections>
+                </controller>
             </objects>
-            <point key="canvasLocation" x="220" y="345"/>
+            <point key="canvasLocation" x="17" y="402"/>
+        </scene>
+        <!--MainInterfaceController-->
+        <scene sceneID="lCr-ZC-eWU">
+            <objects>
+                <controller identifier="MainInterfaceController" fullBounds="YES" fullScreen="YES" id="KeV-qd-og0" customClass="MainInterfaceController" customModule="WristQuiz_WatchKit_Extension">
+                    <items>
+                        <group width="1" height="1" alignment="left" layout="vertical" id="wtQ-86-Gfb">
+                            <items>
+                                <label width="136" alignment="left" text="!" textAlignment="center" numberOfLines="8" id="wQy-gO-mjP">
+                                    <color key="textColor" red="0.0" green="1" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
+                                </label>
+                                <label width="136" alignment="left" verticalAlignment="bottom" text="Label" textAlignment="center" id="ghp-vn-WGJ"/>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="countDownTimerText" destination="ghp-vn-WGJ" id="H4V-jT-PLK"/>
+                        <outlet property="resultText" destination="wQy-gO-mjP" id="5Tz-h8-YCO"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="17" y="746"/>
         </scene>
         <!--Static Notification Interface Controller-->
         <scene sceneID="AEw-b0-oYE">
@@ -27,21 +89,21 @@
                     </connections>
                 </notificationController>
             </objects>
-            <point key="canvasLocation" x="220" y="643"/>
+            <point key="canvasLocation" x="533" y="419"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="ZPc-GJ-vnh">
             <objects>
-                <controller id="4sK-HA-Art" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="4sK-HA-Art" customClass="NotificationController" customModule="WristQuiz_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="643"/>
+            <point key="canvasLocation" x="765" y="763"/>
         </scene>
         <!--Notification Controller-->
         <scene sceneID="Niz-AI-uX2">
             <objects>
-                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModuleProvider="target"/>
+                <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="WristQuiz_WatchKit_App" customModuleProvider="target"/>
             </objects>
-            <point key="canvasLocation" x="468" y="345"/>
+            <point key="canvasLocation" x="876" y="321"/>
         </scene>
     </scenes>
 </document>

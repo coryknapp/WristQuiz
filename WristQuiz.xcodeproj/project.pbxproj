@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		990017282269504D00A06AC0 /* MainInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990017272269504D00A06AC0 /* MainInterfaceController.swift */; };
+		9900172A2269700900A06AC0 /* TriviaQuestionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990017292269700900A06AC0 /* TriviaQuestionInterfaceController.swift */; };
+		9900172C2269B17200A06AC0 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9900172B2269B17200A06AC0 /* Util.swift */; };
+		99008CA3228657CF00D41D54 /* ThreeOptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99008CA2228657CF00D41D54 /* ThreeOptionViewController.swift */; };
+		99008CA5228A375600D41D54 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99008CA4228A375600D41D54 /* Style.swift */; };
+		99008CA6228A37D900D41D54 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99008CA4228A375600D41D54 /* Style.swift */; };
+		99269DB5227CE4EA007D61CD /* SwiftSoup+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99269DB4227CE4EA007D61CD /* SwiftSoup+Table.swift */; };
+		99269DB7227CE54F007D61CD /* TableMiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99269DB6227CE54F007D61CD /* TableMiner.swift */; };
 		99804249225BF7E90008B67F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99804248225BF7E90008B67F /* AppDelegate.swift */; };
 		9980424B225BF7E90008B67F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980424A225BF7E90008B67F /* ViewController.swift */; };
 		9980424E225BF7E90008B67F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9980424C225BF7E90008B67F /* Main.storyboard */; };
@@ -16,10 +24,21 @@
 		9980425E225BF7F10008B67F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9980425C225BF7F10008B67F /* Interface.storyboard */; };
 		99804260225BF7F30008B67F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9980425F225BF7F30008B67F /* Assets.xcassets */; };
 		99804267225BF7F40008B67F /* WristQuiz WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 99804266225BF7F40008B67F /* WristQuiz WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		9980426C225BF7F40008B67F /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980426B225BF7F40008B67F /* InterfaceController.swift */; };
+		9980426C225BF7F40008B67F /* ThreeOptionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980426B225BF7F40008B67F /* ThreeOptionInterfaceController.swift */; };
 		9980426E225BF7F40008B67F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980426D225BF7F40008B67F /* ExtensionDelegate.swift */; };
 		99804270225BF7F40008B67F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980426F225BF7F40008B67F /* NotificationController.swift */; };
 		99804272225BF7F50008B67F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99804271225BF7F50008B67F /* Assets.xcassets */; };
+		99804283225D94400008B67F /* presidents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99804282225D94400008B67F /* presidents.plist */; };
+		99804284225D94400008B67F /* presidents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99804282225D94400008B67F /* presidents.plist */; };
+		99804288225D96650008B67F /* TriviaCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99804287225D96650008B67F /* TriviaCollection.swift */; };
+		99804289225D96650008B67F /* TriviaCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99804287225D96650008B67F /* TriviaCollection.swift */; };
+		9980428B225D97590008B67F /* PresidentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980428A225D97590008B67F /* PresidentCollection.swift */; };
+		9980428C225D97590008B67F /* PresidentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980428A225D97590008B67F /* PresidentCollection.swift */; };
+		998153622282496A00AEB6E5 /* String+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998153612282496A00AEB6E5 /* String+Util.swift */; };
+		99B71A9A227AA0F6002071C7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B71A99227AA0F6002071C7 /* main.swift */; };
+		99B71A9E227AA184002071C7 /* SwiftSoup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B71A7F227A91AC002071C7 /* SwiftSoup.framework */; };
+		99F19D3C228BC18500EE8832 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F19D3B228BC18500EE8832 /* QuestionViewController.swift */; };
+		99F41A9A22712F0F005CDD2F /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9900172B2269B17200A06AC0 /* Util.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,9 +81,25 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99B71A95227AA0F6002071C7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		990017272269504D00A06AC0 /* MainInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceController.swift; sourceTree = "<group>"; };
+		990017292269700900A06AC0 /* TriviaQuestionInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaQuestionInterfaceController.swift; sourceTree = "<group>"; };
+		9900172B2269B17200A06AC0 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		99008CA2228657CF00D41D54 /* ThreeOptionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeOptionViewController.swift; sourceTree = "<group>"; };
+		99008CA4228A375600D41D54 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		99269DB4227CE4EA007D61CD /* SwiftSoup+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftSoup+Table.swift"; sourceTree = "<group>"; };
+		99269DB6227CE54F007D61CD /* TableMiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMiner.swift; sourceTree = "<group>"; };
 		99804245225BF7E90008B67F /* WristQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WristQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99804248225BF7E90008B67F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9980424A225BF7E90008B67F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,12 +112,22 @@
 		9980425F225BF7F30008B67F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99804261225BF7F40008B67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99804266225BF7F40008B67F /* WristQuiz WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WristQuiz WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9980426B225BF7F40008B67F /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		9980426B225BF7F40008B67F /* ThreeOptionInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeOptionInterfaceController.swift; sourceTree = "<group>"; };
 		9980426D225BF7F40008B67F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		9980426F225BF7F40008B67F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		99804271225BF7F50008B67F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99804273225BF7F50008B67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99804274225BF7F50008B67F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		99804282225D94400008B67F /* presidents.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = presidents.plist; sourceTree = "<group>"; };
+		99804287225D96650008B67F /* TriviaCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaCollection.swift; sourceTree = "<group>"; };
+		9980428A225D97590008B67F /* PresidentCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentCollection.swift; sourceTree = "<group>"; };
+		998153612282496A00AEB6E5 /* String+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Util.swift"; sourceTree = "<group>"; };
+		99B71A72227A8BBB002071C7 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
+		99B71A7F227A91AC002071C7 /* SwiftSoup.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSoup.framework; path = Carthage/Build/Mac/SwiftSoup.framework; sourceTree = "<group>"; };
+		99B71A85227A9AA3002071C7 /* WikiTableRipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiTableRipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		99B71A97227AA0F6002071C7 /* WikiTableMinerTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WikiTableMinerTool; sourceTree = BUILT_PRODUCTS_DIR; };
+		99B71A99227AA0F6002071C7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		99F19D3B228BC18500EE8832 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,16 +145,45 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		99B71A82227A9AA3002071C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99B71A94227AA0F6002071C7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				99B71A9E227AA184002071C7 /* SwiftSoup.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		99008CA7228A3BDB00D41D54 /* Collections */ = {
+			isa = PBXGroup;
+			children = (
+				99804287225D96650008B67F /* TriviaCollection.swift */,
+				9980428A225D97590008B67F /* PresidentCollection.swift */,
+			);
+			path = Collections;
+			sourceTree = "<group>";
+		};
 		9980423C225BF7E90008B67F = {
 			isa = PBXGroup;
 			children = (
+				99B71A72227A8BBB002071C7 /* Cartfile */,
 				99804247225BF7E90008B67F /* WristQuiz */,
 				9980425B225BF7F10008B67F /* WristQuiz WatchKit App */,
 				9980426A225BF7F40008B67F /* WristQuiz WatchKit Extension */,
+				99B71A98227AA0F6002071C7 /* WikiTableMinerTool */,
+				99804286225D962A0008B67F /* Shared */,
 				99804246225BF7E90008B67F /* Products */,
+				99804285225D944E0008B67F /* Trivia Data */,
+				99B71A7E227A91AB002071C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +193,8 @@
 				99804245225BF7E90008B67F /* WristQuiz.app */,
 				99804257225BF7F10008B67F /* WristQuiz WatchKit App.app */,
 				99804266225BF7F40008B67F /* WristQuiz WatchKit Extension.appex */,
+				99B71A85227A9AA3002071C7 /* WikiTableRipper.app */,
+				99B71A97227AA0F6002071C7 /* WikiTableMinerTool */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -132,6 +208,7 @@
 				9980424F225BF7F10008B67F /* Assets.xcassets */,
 				99804251225BF7F10008B67F /* LaunchScreen.storyboard */,
 				99804254225BF7F10008B67F /* Info.plist */,
+				99F19D3A228BC15900EE8832 /* QuestionViewControllers */,
 			);
 			path = WristQuiz;
 			sourceTree = "<group>";
@@ -149,7 +226,9 @@
 		9980426A225BF7F40008B67F /* WristQuiz WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				9980426B225BF7F40008B67F /* InterfaceController.swift */,
+				990017272269504D00A06AC0 /* MainInterfaceController.swift */,
+				990017292269700900A06AC0 /* TriviaQuestionInterfaceController.swift */,
+				9980426B225BF7F40008B67F /* ThreeOptionInterfaceController.swift */,
 				9980426D225BF7F40008B67F /* ExtensionDelegate.swift */,
 				9980426F225BF7F40008B67F /* NotificationController.swift */,
 				99804271225BF7F50008B67F /* Assets.xcassets */,
@@ -157,6 +236,52 @@
 				99804274225BF7F50008B67F /* PushNotificationPayload.apns */,
 			);
 			path = "WristQuiz WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		99804285225D944E0008B67F /* Trivia Data */ = {
+			isa = PBXGroup;
+			children = (
+				99804282225D94400008B67F /* presidents.plist */,
+			);
+			path = "Trivia Data";
+			sourceTree = "<group>";
+		};
+		99804286225D962A0008B67F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				99008CA7228A3BDB00D41D54 /* Collections */,
+				9900172B2269B17200A06AC0 /* Util.swift */,
+				99008CA4228A375600D41D54 /* Style.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		99B71A7E227A91AB002071C7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				99B71A7F227A91AC002071C7 /* SwiftSoup.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		99B71A98227AA0F6002071C7 /* WikiTableMinerTool */ = {
+			isa = PBXGroup;
+			children = (
+				99B71A99227AA0F6002071C7 /* main.swift */,
+				99269DB4227CE4EA007D61CD /* SwiftSoup+Table.swift */,
+				99269DB6227CE54F007D61CD /* TableMiner.swift */,
+				998153612282496A00AEB6E5 /* String+Util.swift */,
+			);
+			path = WikiTableMinerTool;
+			sourceTree = "<group>";
+		};
+		99F19D3A228BC15900EE8832 /* QuestionViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				99F19D3B228BC18500EE8832 /* QuestionViewController.swift */,
+				99008CA2228657CF00D41D54 /* ThreeOptionViewController.swift */,
+			);
+			path = QuestionViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -215,6 +340,40 @@
 			productReference = 99804266225BF7F40008B67F /* WristQuiz WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
+		99B71A84227A9AA3002071C7 /* WikiTableRipper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99B71A90227A9AB0002071C7 /* Build configuration list for PBXNativeTarget "WikiTableRipper" */;
+			buildPhases = (
+				99B71A81227A9AA3002071C7 /* Sources */,
+				99B71A82227A9AA3002071C7 /* Frameworks */,
+				99B71A83227A9AA3002071C7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WikiTableRipper;
+			productName = WikiTableRipper;
+			productReference = 99B71A85227A9AA3002071C7 /* WikiTableRipper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		99B71A96227AA0F6002071C7 /* WikiTableMinerTool */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 99B71A9B227AA0F6002071C7 /* Build configuration list for PBXNativeTarget "WikiTableMinerTool" */;
+			buildPhases = (
+				99B71A93227AA0F6002071C7 /* Sources */,
+				99B71A94227AA0F6002071C7 /* Frameworks */,
+				99B71A95227AA0F6002071C7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WikiTableMinerTool;
+			productName = WikiTableMinerTool;
+			productReference = 99B71A97227AA0F6002071C7 /* WikiTableMinerTool */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -232,6 +391,12 @@
 						CreatedOnToolsVersion = 10.1;
 					};
 					99804265225BF7F40008B67F = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					99B71A84227A9AA3002071C7 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					99B71A96227AA0F6002071C7 = {
 						CreatedOnToolsVersion = 10.1;
 					};
 				};
@@ -252,6 +417,8 @@
 				99804244225BF7E90008B67F /* WristQuiz */,
 				99804256225BF7F10008B67F /* WristQuiz WatchKit App */,
 				99804265225BF7F40008B67F /* WristQuiz WatchKit Extension */,
+				99B71A84227A9AA3002071C7 /* WikiTableRipper */,
+				99B71A96227AA0F6002071C7 /* WikiTableMinerTool */,
 			);
 		};
 /* End PBXProject section */
@@ -264,6 +431,7 @@
 				99804253225BF7F10008B67F /* LaunchScreen.storyboard in Resources */,
 				99804250225BF7F10008B67F /* Assets.xcassets in Resources */,
 				9980424E225BF7E90008B67F /* Main.storyboard in Resources */,
+				99804283225D94400008B67F /* presidents.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,6 +449,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				99804272225BF7F50008B67F /* Assets.xcassets in Resources */,
+				99804284225D94400008B67F /* presidents.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99B71A83227A9AA3002071C7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +467,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99804288225D96650008B67F /* TriviaCollection.swift in Sources */,
 				9980424B225BF7E90008B67F /* ViewController.swift in Sources */,
+				99F41A9A22712F0F005CDD2F /* Util.swift in Sources */,
+				99008CA3228657CF00D41D54 /* ThreeOptionViewController.swift in Sources */,
+				9980428B225D97590008B67F /* PresidentCollection.swift in Sources */,
+				99008CA5228A375600D41D54 /* Style.swift in Sources */,
+				99F19D3C228BC18500EE8832 /* QuestionViewController.swift in Sources */,
 				99804249225BF7E90008B67F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -300,9 +482,33 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99804289225D96650008B67F /* TriviaCollection.swift in Sources */,
+				9980428C225D97590008B67F /* PresidentCollection.swift in Sources */,
 				99804270225BF7F40008B67F /* NotificationController.swift in Sources */,
+				9900172C2269B17200A06AC0 /* Util.swift in Sources */,
 				9980426E225BF7F40008B67F /* ExtensionDelegate.swift in Sources */,
-				9980426C225BF7F40008B67F /* InterfaceController.swift in Sources */,
+				990017282269504D00A06AC0 /* MainInterfaceController.swift in Sources */,
+				9900172A2269700900A06AC0 /* TriviaQuestionInterfaceController.swift in Sources */,
+				99008CA6228A37D900D41D54 /* Style.swift in Sources */,
+				9980426C225BF7F40008B67F /* ThreeOptionInterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99B71A81227A9AA3002071C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		99B71A93227AA0F6002071C7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				998153622282496A00AEB6E5 /* String+Util.swift in Sources */,
+				99269DB7227CE54F007D61CD /* TableMiner.swift in Sources */,
+				99B71A9A227AA0F6002071C7 /* main.swift in Sources */,
+				99269DB5227CE4EA007D61CD /* SwiftSoup+Table.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -583,6 +789,102 @@
 			};
 			name = Release;
 		};
+		99B71A91227A9AB0002071C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WikiTableRipper/WikiTableRipper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S39RJSR774;
+				INFOPLIST_FILE = WikiTableRipper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "cory-knapp.WikiTableRipper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		99B71A92227A9AB0002071C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = WikiTableRipper/WikiTableRipper.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = S39RJSR774;
+				INFOPLIST_FILE = WikiTableRipper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_BUNDLE_IDENTIFIER = "cory-knapp.WikiTableRipper";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
+		99B71A9C227AA0F6002071C7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S39RJSR774;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"@executable_path/Frameworks",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+					"@executable_path",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Debug;
+		};
+		99B71A9D227AA0F6002071C7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = S39RJSR774;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+				);
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(PROJECT_DIR)/Carthage/Build/Mac",
+					"@executable_path/Frameworks",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/macosx",
+					"@executable_path",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_FORCE_DYNAMIC_LINK_STDLIB = YES;
+				SWIFT_FORCE_STATIC_LINK_STDLIB = NO;
+				SWIFT_VERSION = 4.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -618,6 +920,24 @@
 			buildConfigurations = (
 				99804280225BF7F50008B67F /* Debug */,
 				99804281225BF7F50008B67F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99B71A90227A9AB0002071C7 /* Build configuration list for PBXNativeTarget "WikiTableRipper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99B71A91227A9AB0002071C7 /* Debug */,
+				99B71A92227A9AB0002071C7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		99B71A9B227AA0F6002071C7 /* Build configuration list for PBXNativeTarget "WikiTableMinerTool" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				99B71A9C227AA0F6002071C7 /* Debug */,
+				99B71A9D227AA0F6002071C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

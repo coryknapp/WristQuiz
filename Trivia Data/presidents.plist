@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    
+    <array>
+        <dict>
+            <key>number</key>
+            <integer>1</integer>
+            <key>dates</key>
+            <string>April 30, 1789  – March 4, 1797</string>
+            <key>name</key>
+            <string>George Washington</string>
+            <key>party</key>
+            <string>Unaffiliated [2]</string>
+            <key>election_year</key>
+            <string>1788–89</string>
+            <key>vp</key>
+            <string>John Adams [f]</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>2</integer>
+            <key>dates</key>
+            <string>March 4, 1797 – March 4, 1801</string>
+            <key>name</key>
+            <string>John Adams</string>
+            <key>party</key>
+            <string>Federalist</string>
+            <key>election_year</key>
+            <string>1796</string>
+            <key>vp</key>
+            <string>Thomas Jefferson </string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>3</integer>
+            <key>dates</key>
+            <string>March 4, 1801 – March 4, 1809</string>
+            <key>name</key>
+            <string>Thomas Jefferson</string>
+            <key>party</key>
+            <string>Democratic- Republican</string>
+            <key>election_year</key>
+            <string>1800</string>
+            <key>vp</key>
+            <string>Aaron Burr March 4, 1801 – March 4, 1805</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>4</integer>
+            <key>dates</key>
+            <string>March 4, 1809 – March 4, 1817</string>
+            <key>name</key>
+            <string>James Madison</string>
+            <key>party</key>
+            <string>Democratic- Republican</string>
+            <key>election_year</key>
+            <string>1808</string>
+            <key>vp</key>
+            <string>George Clinton March 4, 1809 – April 20, 1812 (Died in office)</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>5</integer>
+            <key>dates</key>
+            <string>March 4, 1817 – March 4, 1825</string>
+            <key>name</key>
+            <string>James Monroe</string>
+            <key>party</key>
+            <string>Democratic- Republican</string>
+            <key>election_year</key>
+            <string>1816</string>
+            <key>vp</key>
+            <string>Daniel D. Tompkins</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>6</integer>
+            <key>dates</key>
+            <string>March 4, 1825 – March 4, 1829</string>
+            <key>name</key>
+            <string>John Quincy Adams</string>
+            <key>party</key>
+            <string>Democratic- Republican</string>
+            <key>election_year</key>
+            <string>1824</string>
+            <key>vp</key>
+            <string>John C. Calhoun</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>7</integer>
+            <key>dates</key>
+            <string>March 4, 1829 – March 4, 1837</string>
+            <key>name</key>
+            <string>Andrew Jackson</string>
+            <key>party</key>
+            <string>Democratic</string>
+            <key>election_year</key>
+            <string>1828</string>
+            <key>vp</key>
+            <string>John C. Calhoun  March 4, 1829 – December 28, 1832 (Resigned from office)</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>8</integer>
+            <key>dates</key>
+            <string>March 4, 1837 – March 4, 1841</string>
+            <key>name</key>
+            <string>Martin Van Buren</string>
+            <key>party</key>
+            <string>Democratic</string>
+            <key>election_year</key>
+            <string>1836</string>
+            <key>vp</key>
+            <string>Richard M. Johnson</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>9</integer>
+            <key>dates</key>
+            <string>March 4, 1841 – April 4, 1841 (Died in office)</string>
+            <key>name</key>
+            <string>William Henry Harrison</string>
+            <key>party</key>
+            <string>Whig</string>
+            <key>election_year</key>
+            <string>1840</string>
+            <key>vp</key>
+            <string>John Tyler (Succeeded to presidency)</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>11</integer>
+            <key>dates</key>
+            <string>March 4, 1845 – March 4, 1849</string>
+            <key>name</key>
+            <string>James K. Polk</string>
+            <key>party</key>
+            <string>Democratic</string>
+            <key>election_year</key>
+            <string>1844</string>
+            <key>vp</key>
+            <string>George M. Dallas</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>12</integer>
+            <key>dates</key>
+            <string>March 4, 1849 – July 9, 1850 (Died in office)</string>
+            <key>name</key>
+            <string>Zachary Taylor</string>
+            <key>party</key>
+            <string>Whig</string>
+            <key>election_year</key>
+            <string>1848</string>
+            <key>vp</key>
+            <string>Millard Fillmore (Succeeded to presidency)</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>14</integer>
+            <key>dates</key>
+            <string>March 4, 1853 – March 4, 1857</string>
+            <key>name</key>
+            <string>Franklin Pierce</string>
+            <key>party</key>
+            <string>Democratic</string>
+            <key>election_year</key>
+            <string>1852</string>
+            <key>vp</key>
+            <string>William R. King March 4 – April 18, 1853 (Died in office)</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>15</integer>
+            <key>dates</key>
+            <string>March 4, 1857 – March 4, 1861</string>
+            <key>name</key>
+            <string>James Buchanan</string>
+            <key>party</key>
+            <string>Democratic</string>
+            <key>election_year</key>
+            <string>1856</string>
+            <key>vp</key>
+            <string>John C. Breckinridge</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>16</integer>
+            <key>dates</key>
+            <string>March 4, 1861 – April 15, 1865 (Died in office)</string>
+            <key>name</key>
+            <string>Abraham Lincoln</string>
+            <key>party</key>
+            <string>Republican (National Union) [l]</string>
+            <key>election_year</key>
+            <string>1860</string>
+            <key>vp</key>
+            <string>Hannibal Hamlin March 4, 1861 – March 4, 1865</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>18</integer>
+            <key>dates</key>
+            <string>March 4, 1869 – March 4, 1877</string>
+            <key>name</key>
+            <string>Ulysses S. Grant</string>
+            <key>party</key>
+            <string>Republican</string>
+            <key>election_year</key>
+            <string>1868</string>
+            <key>vp</key>
+            <string>Schuyler Colfax March 4, 1869 – March 4, 1873</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>19</integer>
+            <key>dates</key>
+            <string>March 4, 1877 – March 4, 1881</string>
+            <key>name</key>
+            <string>Rutherford B. Hayes</string>
+            <key>party</key>
+            <string>Republican</string>
+            <key>election_year</key>
+            <string>1876</string>
+            <key>vp</key>
+            <string>William A. Wheeler</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>20</integer>
+            <key>dates</key>
+            <string>March 4, 1881 – September 19, 1881 (Died in office)</string>
+            <key>name</key>
+            <string>James A. Garfield</string>
+            <key>party</key>
+            <string>Republican</string>
+            <key>election_year</key>
+            <string>1880</string>
+            <key>vp</key>
+            <string>Chester A. Arthur (Succeeded to presidency)</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>22</integer>
+            <key>dates</key>
+            <string>March 4, 1885 – March 4, 1889</string>
+            <key>name</key>
+            <string>Grover Cleveland</string>
+            <key>party</key>
+            <string>Democratic</string>
+            <key>election_year</key>
+            <string>1884</string>
+            <key>vp</key>
+            <string>Thomas A. Hendricks March 4 – November 25, 1885 (Died in office)</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>23</integer>
+            <key>dates</key>
+            <string>March 4, 1889 – March 4, 1893</string>
+            <key>name</key>
+            <string>Benjamin Harrison</string>
+            <key>party</key>
+            <string>Republican</string>
+            <key>election_year</key>
+            <string>1888</string>
+            <key>vp</key>
+            <string>Levi P. Morton</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>24</integer>
+            <key>dates</key>
+            <string>March 4, 1893 – March 4, 1897</string>
+            <key>name</key>
+            <string>Grover Cleveland</string>
+            <key>party</key>
+            <string>Democratic</string>
+            <key>election_year</key>
+            <string>1892</string>
+            <key>vp</key>
+            <string>Adlai Stevenson</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>25</integer>
+            <key>dates</key>
+            <string>March 4, 1897 – September 14, 1901 (Died in office)</string>
+            <key>name</key>
+            <string>William McKinley</string>
+            <key>party</key>
+            <string>Republican</string>
+            <key>election_year</key>
+            <string>1896</string>
+            <key>vp</key>
+            <string>Garret Hobart March 4, 1897 – November 21, 1899 (Died in office)</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>27</integer>
+            <key>dates</key>
+            <string>March 4, 1909 – March 4, 1913</string>
+            <key>name</key>
+            <string>William Howard Taft</string>
+            <key>party</key>
+            <string>Republican</string>
+            <key>election_year</key>
+            <string>1908</string>
+            <key>vp</key>
+            <string>James S. Sherman March 4, 1909 – October 30, 1912 (Died in office)</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>28</integer>
+            <key>dates</key>
+            <string>March 4, 1913 – March 4, 1921</string>
+            <key>name</key>
+            <string>Woodrow Wilson</string>
+            <key>party</key>
+            <string>Democratic</string>
+            <key>election_year</key>
+            <string>1912</string>
+            <key>vp</key>
+            <string>Thomas R. Marshall</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>29</integer>
+            <key>dates</key>
+            <string>March 4, 1921 – August 2, 1923 (Died in office)</string>
+            <key>name</key>
+            <string>Warren G. Harding</string>
+            <key>party</key>
+            <string>Republican</string>
+            <key>election_year</key>
+            <string>1920</string>
+            <key>vp</key>
+            <string>Calvin Coolidge (Succeeded to presidency)</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>31</integer>
+            <key>dates</key>
+            <string>March 4, 1929 – March 4, 1933</string>
+            <key>name</key>
+            <string>Herbert Hoover</string>
+            <key>party</key>
+            <string>Republican</string>
+            <key>election_year</key>
+            <string>1928</string>
+            <key>vp</key>
+            <string>Charles Curtis</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>32</integer>
+            <key>dates</key>
+            <string>March 4, 1933 – April 12, 1945 (Died in office)</string>
+            <key>name</key>
+            <string>Franklin D. Roosevelt</string>
+            <key>party</key>
+            <string>Democratic</string>
+            <key>election_year</key>
+            <string>1932</string>
+            <key>vp</key>
+            <string>John N. Garner March 4, 1933 – January 20, 1941 </string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>34</integer>
+            <key>dates</key>
+            <string>January 20, 1953 – January 20, 1961</string>
+            <key>name</key>
+            <string>Dwight D. Eisenhower</string>
+            <key>party</key>
+            <string>Republican</string>
+            <key>election_year</key>
+            <string>1952</string>
+            <key>vp</key>
+            <string>Richard Nixon</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>35</integer>
+            <key>dates</key>
+            <string>January 20, 1961 – November 22, 1963 (Died in office)</string>
+            <key>name</key>
+            <string>John F. Kennedy</string>
+            <key>party</key>
+            <string>Democratic</string>
+            <key>election_year</key>
+            <string>1960</string>
+            <key>vp</key>
+            <string>Lyndon B. Johnson (Succeeded to presidency)</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>37</integer>
+            <key>dates</key>
+            <string>January 20, 1969 – August 9, 1974 (Resigned from office)</string>
+            <key>name</key>
+            <string>Richard Nixon</string>
+            <key>party</key>
+            <string>Republican</string>
+            <key>election_year</key>
+            <string>1968</string>
+            <key>vp</key>
+            <string>Spiro Agnew January 20, 1969 – October 10, 1973 (Resigned from office)</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>39</integer>
+            <key>dates</key>
+            <string>January 20, 1977 – January 20, 1981</string>
+            <key>name</key>
+            <string>Jimmy Carter Born</string>
+            <key>party</key>
+            <string>Democratic</string>
+            <key>election_year</key>
+            <string>1976</string>
+            <key>vp</key>
+            <string>Walter Mondale</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>40</integer>
+            <key>dates</key>
+            <string>January 20, 1981 – January 20, 1989</string>
+            <key>name</key>
+            <string>Ronald Reagan</string>
+            <key>party</key>
+            <string>Republican</string>
+            <key>election_year</key>
+            <string>1980</string>
+            <key>vp</key>
+            <string>George H. W. Bush</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>41</integer>
+            <key>dates</key>
+            <string>January 20, 1989 – January 20, 1993</string>
+            <key>name</key>
+            <string>George H. W. Bush</string>
+            <key>party</key>
+            <string>Republican</string>
+            <key>election_year</key>
+            <string>1988</string>
+            <key>vp</key>
+            <string>Dan Quayle</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>42</integer>
+            <key>dates</key>
+            <string>January 20, 1993 – January 20, 2001</string>
+            <key>name</key>
+            <string>Bill Clinton Born</string>
+            <key>party</key>
+            <string>Democratic</string>
+            <key>election_year</key>
+            <string>1992</string>
+            <key>vp</key>
+            <string>Al Gore</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>43</integer>
+            <key>dates</key>
+            <string>January 20, 2001 – January 20, 2009</string>
+            <key>name</key>
+            <string>George W. Bush Born</string>
+            <key>party</key>
+            <string>Republican</string>
+            <key>election_year</key>
+            <string>2000</string>
+            <key>vp</key>
+            <string>Dick Cheney</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>44</integer>
+            <key>dates</key>
+            <string>January 20, 2009 – January 20, 2017</string>
+            <key>name</key>
+            <string>Barack Obama Born</string>
+            <key>party</key>
+            <string>Democratic</string>
+            <key>election_year</key>
+            <string>2008</string>
+            <key>vp</key>
+            <string>Joe Biden</string>
+            
+        </dict>
+        <dict>
+            <key>number</key>
+            <integer>45</integer>
+            <key>dates</key>
+            <string>January 20, 2017 – Incumbent</string>
+            <key>name</key>
+            <string>Donald Trump Born</string>
+            <key>party</key>
+            <string>Republican</string>
+            <key>election_year</key>
+            <string>2016</string>
+            <key>vp</key>
+            <string>Mike Pence</string>
+            
+        </dict>
+    </array>
+
+    
+</plist>

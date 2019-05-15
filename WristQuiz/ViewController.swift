@@ -10,11 +10,63 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet var resultText: UILabel!
+    @IBOutlet var countDownTimerText: UILabel!
+    
+    var results: TriviaQuestionResponse!
+    var timer: Timer!
+    var countDownSecond: Int = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        if( results == nil){
+            // we're just starting the app.  Display a splash screen.
+            resultText.text = "Get Ready!"
+            resultText.textColor = Style.successColor
+        }else{
+            // we're coming back from answering a question
+            if(results.correct){
+                resultText.attributedText = NSAttributedString(string: "Correct", attributes: [NSAttributedString.Key.font : Style.successFont, NSAttributedString.Key.foregroundColor: Style.successColor])
+            }else{
+                resultText.attributedText = NSAttributedString(string: results.triviaQuestion.failMessage, attributes: [NSAttributedString.Key.font : Style.failFont, NSAttributedString.Key.foregroundColor: Style.failColor])
+            }
+        }
+        
+        //start timer to advance to next interface
+        timer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: #selector(timerFired), userInfo: nil, repeats: true)
+        
+        countDownSecond = 3
+        refreshCountDownTimerText()
     }
-
-
+    
+    @objc func timerFired(){
+        countDownSecond -= 1
+        
+        if(countDownSecond == 0){
+            setUpNewQuestion()
+        }
+        
+        refreshCountDownTimerText()
+    }
+    
+    func refreshCountDownTimerText(){
+        countDownTimerText.text = String(countDownSecond)
+    }
+    
+    func setUpNewQuestion(){
+        let collection = PresidentCollection()
+        let nextQuestion = collection.getQuestion(difficulty: 0)
+        
+        timer.invalidate()
+        
+        // assuming three response questions for now
+        //WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: "ThreeOptionInterfaceController", context: nextQuestion)])
+        var newController = self.storyboard?.instantiateViewController(withIdentifier: "ThreeOptionViewController")
+        
+        
+        (newController as! QuestionViewController).currentQuestion = nextQuestion
+        self.present(newController!, animated: true, completion: nil)
+    }
 }
 
