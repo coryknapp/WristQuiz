@@ -16,9 +16,9 @@ class ThreeOptionViewController : QuestionViewController{
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        firstButton?.setTitle(currentQuestion.options[0] , for: UIControl.State.normal)
-        secondButton?.setTitle(currentQuestion.options[1] , for: UIControl.State.normal)
-        thirdButton?.setTitle(currentQuestion.options[2] , for: UIControl.State.normal)
+        firstButton?.setTitle(currentQuestion.options[0], for: UIControl.State.normal)
+        secondButton?.setTitle(currentQuestion.options[1], for: UIControl.State.normal)
+        thirdButton?.setTitle(currentQuestion.options[2], for: UIControl.State.normal)
     }
     
     @IBAction func buttonPressed(sender: UIButton){

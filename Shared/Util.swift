@@ -27,7 +27,7 @@ extension Array {
     func randomConsecutiveElements(count: Int) -> ArraySlice<Element>?{
         if self.count < count { return nil }
         let index = Int(arc4random_uniform(UInt32(self.count-count)))
-        return self[index...(index+count)]
+        return self[index...(index+count-1)]
     }
     
     func shuffledRandomConsecutiveElements(count: Int) -> Array?{
@@ -47,9 +47,7 @@ extension Array {
     }
     
     // Other
-    
     func indexOfMax(by areInIncreasingOrder: (Element, Element) throws -> Bool) rethrows -> Int?{
-        // O(n) baby
         var best = self.first!
         var bestIndex = 0
         for (index, element) in self.enumerated(){
@@ -59,5 +57,20 @@ extension Array {
             }
         }
         return bestIndex
+    }
+}
+
+extension Array where Element: Equatable{
+    func containsRepeatedElement() -> Bool{
+        //O(n^2) but we're using really small arrays in this, typically less then
+        //4 elements.  Candidate for future improvement.
+        for (index1, element1) in self.enumerated(){
+            for (index2, element2) in self.enumerated(){
+                if( index1 != index2 && element1 == element2){
+                    return true
+                }
+            }
+        }
+        return false
     }
 }

@@ -78,15 +78,39 @@ class PresidentCollection: TriviaCollection {
             let (index, answer) = options.randomElementAndIndex()
             question.question = "What was \(answer!.name)'s number?"
             question.answerIndex = index!
-            question.failMessage = "\(question.options[question.answerIndex]) was the \(formatter.string(from:NSNumber(value: answer!.number))!) president"
+            question.failMessage = "\(options[index!].name) was the \(formatter.string(from:NSNumber(value: answer!.number))!) president"
         //default:
         //    question.question = "error"
         }
+        print(options.count)
         
-        return question
+        if( sanityCheck(question)){
+            return question
+        }
+        return getQuestionForThreeOptionMutipleChoiceTextFormat()
     }
     
-
+    // perform a sanity check to make sure the question to make sure the question
+    // makes sense.  For example, Cleveland was the 22nd and 24th president
+    // so don't ask a question where his name appears as an answer twice, and don't
+    // ask the number of his presidency and include both 22 and 24
+    // returns false if the check fails
+    func sanityCheck(_ question: TriviaQuestion) -> Bool{
+        
+        // make sure the options doesn't contain repeats
+        if question.options.containsRepeatedElement(){
+            return false
+        }
+        
+        // For the Cleveland case
+        // make sure our options don't include 22 and 24
+        if( question.options.contains("22") && question.options.contains("24")){
+            return false
+        }
+        
+        return true
+    }
+    
     init() {
         loadDataFile()
     }
