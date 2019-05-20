@@ -444,7 +444,7 @@
             <key>dates</key>
             <string>January 20, 1977 – January 20, 1981</string>
             <key>name</key>
-            <string>Jimmy Carter Born</string>
+            <string>Jimmy Carter</string>
             <key>party</key>
             <string>Democratic</string>
             <key>election_year</key>
@@ -489,7 +489,7 @@
             <key>dates</key>
             <string>January 20, 1993 – January 20, 2001</string>
             <key>name</key>
-            <string>Bill Clinton Born</string>
+            <string>Bill Clinton</string>
             <key>party</key>
             <string>Democratic</string>
             <key>election_year</key>
@@ -504,7 +504,7 @@
             <key>dates</key>
             <string>January 20, 2001 – January 20, 2009</string>
             <key>name</key>
-            <string>George W. Bush Born</string>
+            <string>George W. Bush</string>
             <key>party</key>
             <string>Republican</string>
             <key>election_year</key>
@@ -519,7 +519,7 @@
             <key>dates</key>
             <string>January 20, 2009 – January 20, 2017</string>
             <key>name</key>
-            <string>Barack Obama Born</string>
+            <string>Barack Obama</string>
             <key>party</key>
             <string>Democratic</string>
             <key>election_year</key>
@@ -534,7 +534,7 @@
             <key>dates</key>
             <string>January 20, 2017 – Incumbent</string>
             <key>name</key>
-            <string>Donald Trump Born</string>
+            <string>Donald Trump</string>
             <key>party</key>
             <string>Republican</string>
             <key>election_year</key>
@@ -544,6 +544,4 @@
             
         </dict>
     </array>
-
-    
 </plist>

@@ -15,7 +15,7 @@ extension String{
         self.append("\n")
     }
     
-    public mutating func strip(_ regEx: String) -> String{
+   public mutating func strip(_ regEx: String) -> String{
         if let range = self.range(of: regEx, options: .regularExpression){
             self.replaceSubrange(range, with: "")
         }

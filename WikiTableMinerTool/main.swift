@@ -20,8 +20,12 @@ let presInstruct = TableMinerInstructions(
         TableMinerInstructions.stripAnnotations(plistKey: "dates"),
         nil, // portrait
         {
-            //includes name and birth/death year
-            let text = try! $0.select("big").text()
+            // includes name and birth/death year
+            var text = try! $0.select("big").text()
+            // also, living presidents have " Born" included in that <big> tag
+            // so we have to strip it
+            _ = text.strip(" Born$")
+            
             return [("name", "string", text)]
         },
         nil,// prior office
