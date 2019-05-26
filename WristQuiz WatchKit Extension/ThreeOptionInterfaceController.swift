@@ -17,17 +17,17 @@ class ThreeOptionInterfaceController: TriviaQuestionInterfaceController{
     @IBOutlet var thirdButton: WKInterfaceButton!
 
     @IBAction func firstButtonPressed(){
-        currentRepsonse.answerIndex = 0
+        gameSession!.responseIndex = 0
         displayResult()
     }
     
     @IBAction func secondButtonPressed(){
-        currentRepsonse.answerIndex = 1
+        gameSession!.responseIndex = 1
         displayResult()
     }
     
     @IBAction func thirdButtonPressed(){
-        currentRepsonse.answerIndex = 2
+        gameSession!.responseIndex = 2
         displayResult()
     }
     
@@ -35,10 +35,10 @@ class ThreeOptionInterfaceController: TriviaQuestionInterfaceController{
         super.awake(withContext: context)
         
         // Configure interface objects here.
-        questionField.setText(currentQuestion.question)
-        firstButton.setTitle(currentQuestion.options[0])
-        secondButton.setTitle(currentQuestion.options[1])
-        thirdButton.setTitle(currentQuestion.options[2])
+        questionField.setText(gameSession!.currentQuestion!.question)
+        firstButton.setTitle(gameSession!.currentQuestion!.options[0])
+        secondButton.setTitle(gameSession!.currentQuestion!.options[1])
+        thirdButton.setTitle(gameSession!.currentQuestion!.options[2])
     }
     
     override func willActivate() {

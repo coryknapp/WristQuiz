@@ -10,15 +10,15 @@ import UIKit
 
 class ThreeOptionViewController : QuestionViewController{
     
-    @IBOutlet var firstButton: UIButton?
-    @IBOutlet var secondButton: UIButton?
-    @IBOutlet var thirdButton: UIButton?
+    @IBOutlet var firstButton: UIButton!
+    @IBOutlet var secondButton: UIButton!
+    @IBOutlet var thirdButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        firstButton?.setTitle(currentQuestion.options[0], for: UIControl.State.normal)
-        secondButton?.setTitle(currentQuestion.options[1], for: UIControl.State.normal)
-        thirdButton?.setTitle(currentQuestion.options[2], for: UIControl.State.normal)
+        firstButton?.setTitle(gameSession!.currentQuestion!.options[0], for: UIControl.State.normal)
+        secondButton?.setTitle(gameSession!.currentQuestion!.options[1], for: UIControl.State.normal)
+        thirdButton?.setTitle(gameSession!.currentQuestion!.options[2], for: UIControl.State.normal)
     }
     
     @IBAction func buttonPressed(sender: UIButton){
@@ -33,8 +33,8 @@ class ThreeOptionViewController : QuestionViewController{
         default:
             assert(false, "Unknown sender")
         }
-        currentRepsonse.answerIndex = buttonIndex
         
+        gameSession!.responseIndex = buttonIndex
         self.returnToMain()
     }
 }

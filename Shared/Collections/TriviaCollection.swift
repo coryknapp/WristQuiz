@@ -26,17 +26,6 @@ public class TriviaQuestion{
     }
 }
 
-public class TriviaQuestionResponse{
-    public var triviaQuestion: TriviaQuestion!
-    public var answerIndex: Int!
-    
-    public var correct: Bool{
-        get{
-            return triviaQuestion.answerIndex == answerIndex
-        }
-    }
-}
-
 protocol TriviaCollection{
     func getQuestion(difficulty : Int) -> TriviaQuestion
 }

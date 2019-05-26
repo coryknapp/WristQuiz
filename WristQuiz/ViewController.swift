@@ -8,28 +8,32 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: GameSessionTrackingViewController {
 
     @IBOutlet var resultText: UILabel!
     @IBOutlet var countDownTimerText: UILabel!
-    
-    var results: TriviaQuestionResponse!
+
     var timer: Timer!
     var countDownSecond: Int = 0
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        if( results == nil){
+        if gameSession == nil{
             // we're just starting the app.  Display a splash screen.
             resultText.text = "Get Ready!"
             resultText.textColor = Style.successColor
+            
+            // now set up a new GameSession
+            gameSession = GameSession()
+            gameSession?.triviaCollection = PresidentCollection()
+            
         }else{
             // we're coming back from answering a question
-            if(results.correct){
+            var result = gameSession?.submitAnswer((gameSession?.responseIndex)!)
+            if result == .right {
                 resultText.attributedText = NSAttributedString(string: "Correct", attributes: [NSAttributedString.Key.font : Style.successFont, NSAttributedString.Key.foregroundColor: Style.successColor])
             }else{
-                resultText.attributedText = NSAttributedString(string: results.triviaQuestion.failMessage, attributes: [NSAttributedString.Key.font : Style.failFont, NSAttributedString.Key.foregroundColor: Style.failColor])
+                resultText.attributedText = NSAttributedString(string: gameSession!.currentQuestion!.failMessage, attributes: [NSAttributedString.Key.font : Style.failFont, NSAttributedString.Key.foregroundColor: Style.failColor])
             }
         }
         
@@ -56,8 +60,8 @@ class ViewController: UIViewController {
     
     func setUpNewQuestion(){
         let collection = PresidentCollection()
-        let nextQuestion = collection.getQuestion(difficulty: 0)
-        
+        gameSession?.prepareNewQuestion()
+
         timer.invalidate()
         
         // assuming three response questions for now
@@ -65,7 +69,7 @@ class ViewController: UIViewController {
         var newController = self.storyboard?.instantiateViewController(withIdentifier: "ThreeOptionViewController")
         
         
-        (newController as! QuestionViewController).currentQuestion = nextQuestion
+        (newController as! QuestionViewController).gameSession = gameSession
         self.present(newController!, animated: true, completion: nil)
     }
 }

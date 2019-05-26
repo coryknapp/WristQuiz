@@ -8,27 +8,25 @@
 
 import UIKit
 
-class QuestionViewController : UIViewController{
+class QuestionViewController : GameSessionTrackingViewController{
     
-    @IBOutlet var QuestionTextLabel: UILabel?
+    @IBOutlet var QuestionTextLabel: UILabel!
+    @IBOutlet var progressLabel: UILabel!
     
-    var currentQuestion : TriviaQuestion!
-    var currentRepsonse: TriviaQuestionResponse!
-    
+    //var currentQuestion : TriviaQuestion!
+    //var currentRepsonse: TriviaQuestionResponse!
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        currentRepsonse = TriviaQuestionResponse()
-        currentRepsonse.triviaQuestion = currentQuestion
-        
-        QuestionTextLabel?.text = currentQuestion.question
+        assert(gameSession != nil)
+
+        QuestionTextLabel?.text = gameSession!.currentQuestion!.question
     }
     
     func returnToMain(){
+        assert(gameSession!.responseIndex != nil)
         let newController = self.storyboard?.instantiateViewController(withIdentifier: "main")
-        
-        
-        (newController as! ViewController).results = currentRepsonse
+        (newController as! ViewController).gameSession = gameSession
         self.present(newController!, animated: true, completion: nil)
     }
 }

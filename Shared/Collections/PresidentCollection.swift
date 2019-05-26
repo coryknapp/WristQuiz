@@ -82,8 +82,7 @@ class PresidentCollection: TriviaCollection {
         //default:
         //    question.question = "error"
         }
-        print(options.count)
-        
+
         if( sanityCheck(question)){
             return question
         }

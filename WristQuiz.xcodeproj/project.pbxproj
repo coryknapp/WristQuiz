@@ -35,6 +35,9 @@
 		9980428B225D97590008B67F /* PresidentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980428A225D97590008B67F /* PresidentCollection.swift */; };
 		9980428C225D97590008B67F /* PresidentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980428A225D97590008B67F /* PresidentCollection.swift */; };
 		998153622282496A00AEB6E5 /* String+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998153612282496A00AEB6E5 /* String+Util.swift */; };
+		999A86EB2298CC4700D35F86 /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A86EA2298CC4700D35F86 /* GameSession.swift */; };
+		999A86ED229A0B0F00D35F86 /* GameSessionTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A86EC229A0B0F00D35F86 /* GameSessionTrackingViewController.swift */; };
+		999A86F0229A257C00D35F86 /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A86EA2298CC4700D35F86 /* GameSession.swift */; };
 		99B71A9A227AA0F6002071C7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B71A99227AA0F6002071C7 /* main.swift */; };
 		99B71A9E227AA184002071C7 /* SwiftSoup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B71A7F227A91AC002071C7 /* SwiftSoup.framework */; };
 		99F19D3C228BC18500EE8832 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F19D3B228BC18500EE8832 /* QuestionViewController.swift */; };
@@ -122,6 +125,8 @@
 		99804287225D96650008B67F /* TriviaCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaCollection.swift; sourceTree = "<group>"; };
 		9980428A225D97590008B67F /* PresidentCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentCollection.swift; sourceTree = "<group>"; };
 		998153612282496A00AEB6E5 /* String+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Util.swift"; sourceTree = "<group>"; };
+		999A86EA2298CC4700D35F86 /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
+		999A86EC229A0B0F00D35F86 /* GameSessionTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSessionTrackingViewController.swift; sourceTree = "<group>"; };
 		99B71A72227A8BBB002071C7 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		99B71A7F227A91AC002071C7 /* SwiftSoup.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSoup.framework; path = Carthage/Build/Mac/SwiftSoup.framework; sourceTree = "<group>"; };
 		99B71A85227A9AA3002071C7 /* WikiTableRipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiTableRipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,6 +213,7 @@
 				9980424F225BF7F10008B67F /* Assets.xcassets */,
 				99804251225BF7F10008B67F /* LaunchScreen.storyboard */,
 				99804254225BF7F10008B67F /* Info.plist */,
+				999A86EC229A0B0F00D35F86 /* GameSessionTrackingViewController.swift */,
 				99F19D3A228BC15900EE8832 /* QuestionViewControllers */,
 			);
 			path = WristQuiz;
@@ -249,6 +255,7 @@
 		99804286225D962A0008B67F /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				999A86EA2298CC4700D35F86 /* GameSession.swift */,
 				99008CA7228A3BDB00D41D54 /* Collections */,
 				9900172B2269B17200A06AC0 /* Util.swift */,
 				99008CA4228A375600D41D54 /* Style.swift */,
@@ -474,6 +481,8 @@
 				9980428B225D97590008B67F /* PresidentCollection.swift in Sources */,
 				99008CA5228A375600D41D54 /* Style.swift in Sources */,
 				99F19D3C228BC18500EE8832 /* QuestionViewController.swift in Sources */,
+				999A86EB2298CC4700D35F86 /* GameSession.swift in Sources */,
+				999A86ED229A0B0F00D35F86 /* GameSessionTrackingViewController.swift in Sources */,
 				99804249225BF7E90008B67F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +491,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				999A86F0229A257C00D35F86 /* GameSession.swift in Sources */,
 				99804289225D96650008B67F /* TriviaCollection.swift in Sources */,
 				9980428C225D97590008B67F /* PresidentCollection.swift in Sources */,
 				99804270225BF7F40008B67F /* NotificationController.swift in Sources */,

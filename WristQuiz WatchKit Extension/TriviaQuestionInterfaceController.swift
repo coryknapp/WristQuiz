@@ -12,16 +12,13 @@ import Foundation
 
 class TriviaQuestionInterfaceController: WKInterfaceController {
 
-    var currentQuestion : TriviaQuestion!
-    var currentRepsonse: TriviaQuestionResponse!
+    var gameSession : GameSession?
     
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         // Configure interface objects here.
         
-        currentQuestion = (context as! TriviaQuestion);
-        currentRepsonse = TriviaQuestionResponse()
-        currentRepsonse.triviaQuestion = currentQuestion;
+        gameSession = (context as! GameSession);
     }
 
     override func willActivate() {
@@ -35,6 +32,6 @@ class TriviaQuestionInterfaceController: WKInterfaceController {
     }
     
     func displayResult(){
-        WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: "MainInterfaceController", context: currentRepsonse)])
+        WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: "MainInterfaceController", context: gameSession!)])
     }
 }

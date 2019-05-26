@@ -14,7 +14,6 @@ class MainInterfaceController: WKInterfaceController {
     @IBOutlet var resultText: WKInterfaceLabel!
     @IBOutlet var countDownTimerText: WKInterfaceLabel!
     
-    var results: TriviaQuestionResponse!
     var timer: Timer!
     var countDownSecond: Int = 0
     
@@ -27,11 +26,11 @@ class MainInterfaceController: WKInterfaceController {
             resultText.setTextColor(Style.successColor)
         }else{
             // we're coming back from answering a question
-            results = (context as! TriviaQuestionResponse)
-            if(results.correct){
+            var gameSession = (context as! GameSession)
+            if(gameSession.submitAnswer(gameSession.responseIndex!) == .right){
                 resultText.setAttributedText(NSAttributedString(string: "Correct", attributes: [NSAttributedString.Key.font : Style.successFont, NSAttributedString.Key.foregroundColor: Style.successColor]))
             }else{
-                resultText.setAttributedText(NSAttributedString(string: results.triviaQuestion.failMessage, attributes: [NSAttributedString.Key.font : Style.failFont, NSAttributedString.Key.foregroundColor: Style.failColor]))
+                resultText.setAttributedText(NSAttributedString(string: gameSession.currentQuestion!.failMessage, attributes: [NSAttributedString.Key.font : Style.failFont, NSAttributedString.Key.foregroundColor: Style.failColor]))
             }
         }
         
