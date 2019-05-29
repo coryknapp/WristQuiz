@@ -38,8 +38,11 @@
 		999A86EB2298CC4700D35F86 /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A86EA2298CC4700D35F86 /* GameSession.swift */; };
 		999A86ED229A0B0F00D35F86 /* GameSessionTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A86EC229A0B0F00D35F86 /* GameSessionTrackingViewController.swift */; };
 		999A86F0229A257C00D35F86 /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A86EA2298CC4700D35F86 /* GameSession.swift */; };
+		999A86F2229E2FE100D35F86 /* PresidentCollectionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A86F1229E2FE100D35F86 /* PresidentCollectionTool.swift */; };
+		999A86F4229E30C900D35F86 /* SovereignStateFlagsTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A86F3229E30C900D35F86 /* SovereignStateFlagsTool.swift */; };
 		99B71A9A227AA0F6002071C7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B71A99227AA0F6002071C7 /* main.swift */; };
 		99B71A9E227AA184002071C7 /* SwiftSoup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B71A7F227A91AC002071C7 /* SwiftSoup.framework */; };
+		99CAF262229E4E9900DA1AD5 /* Data+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CAF261229E4E9900DA1AD5 /* Data+Util.swift */; };
 		99F19D3C228BC18500EE8832 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F19D3B228BC18500EE8832 /* QuestionViewController.swift */; };
 		99F41A9A22712F0F005CDD2F /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9900172B2269B17200A06AC0 /* Util.swift */; };
 /* End PBXBuildFile section */
@@ -127,11 +130,13 @@
 		998153612282496A00AEB6E5 /* String+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Util.swift"; sourceTree = "<group>"; };
 		999A86EA2298CC4700D35F86 /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
 		999A86EC229A0B0F00D35F86 /* GameSessionTrackingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSessionTrackingViewController.swift; sourceTree = "<group>"; };
+		999A86F1229E2FE100D35F86 /* PresidentCollectionTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentCollectionTool.swift; sourceTree = "<group>"; };
+		999A86F3229E30C900D35F86 /* SovereignStateFlagsTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SovereignStateFlagsTool.swift; sourceTree = "<group>"; };
 		99B71A72227A8BBB002071C7 /* Cartfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Cartfile; sourceTree = "<group>"; };
 		99B71A7F227A91AC002071C7 /* SwiftSoup.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSoup.framework; path = Carthage/Build/Mac/SwiftSoup.framework; sourceTree = "<group>"; };
-		99B71A85227A9AA3002071C7 /* WikiTableRipper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WikiTableRipper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B71A97227AA0F6002071C7 /* WikiTableMinerTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WikiTableMinerTool; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B71A99227AA0F6002071C7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		99CAF261229E4E9900DA1AD5 /* Data+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Util.swift"; sourceTree = "<group>"; };
 		99F19D3B228BC18500EE8832 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -144,13 +149,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		99804263225BF7F40008B67F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99B71A82227A9AA3002071C7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -198,7 +196,6 @@
 				99804245225BF7E90008B67F /* WristQuiz.app */,
 				99804257225BF7F10008B67F /* WristQuiz WatchKit App.app */,
 				99804266225BF7F40008B67F /* WristQuiz WatchKit Extension.appex */,
-				99B71A85227A9AA3002071C7 /* WikiTableRipper.app */,
 				99B71A97227AA0F6002071C7 /* WikiTableMinerTool */,
 			);
 			name = Products;
@@ -278,6 +275,9 @@
 				99269DB4227CE4EA007D61CD /* SwiftSoup+Table.swift */,
 				99269DB6227CE54F007D61CD /* TableMiner.swift */,
 				998153612282496A00AEB6E5 /* String+Util.swift */,
+				99CAF261229E4E9900DA1AD5 /* Data+Util.swift */,
+				999A86F1229E2FE100D35F86 /* PresidentCollectionTool.swift */,
+				999A86F3229E30C900D35F86 /* SovereignStateFlagsTool.swift */,
 			);
 			path = WikiTableMinerTool;
 			sourceTree = "<group>";
@@ -347,23 +347,6 @@
 			productReference = 99804266225BF7F40008B67F /* WristQuiz WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
 		};
-		99B71A84227A9AA3002071C7 /* WikiTableRipper */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 99B71A90227A9AB0002071C7 /* Build configuration list for PBXNativeTarget "WikiTableRipper" */;
-			buildPhases = (
-				99B71A81227A9AA3002071C7 /* Sources */,
-				99B71A82227A9AA3002071C7 /* Frameworks */,
-				99B71A83227A9AA3002071C7 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = WikiTableRipper;
-			productName = WikiTableRipper;
-			productReference = 99B71A85227A9AA3002071C7 /* WikiTableRipper.app */;
-			productType = "com.apple.product-type.application";
-		};
 		99B71A96227AA0F6002071C7 /* WikiTableMinerTool */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 99B71A9B227AA0F6002071C7 /* Build configuration list for PBXNativeTarget "WikiTableMinerTool" */;
@@ -400,9 +383,6 @@
 					99804265225BF7F40008B67F = {
 						CreatedOnToolsVersion = 10.1;
 					};
-					99B71A84227A9AA3002071C7 = {
-						CreatedOnToolsVersion = 10.1;
-					};
 					99B71A96227AA0F6002071C7 = {
 						CreatedOnToolsVersion = 10.1;
 					};
@@ -424,7 +404,6 @@
 				99804244225BF7E90008B67F /* WristQuiz */,
 				99804256225BF7F10008B67F /* WristQuiz WatchKit App */,
 				99804265225BF7F40008B67F /* WristQuiz WatchKit Extension */,
-				99B71A84227A9AA3002071C7 /* WikiTableRipper */,
 				99B71A96227AA0F6002071C7 /* WikiTableMinerTool */,
 			);
 		};
@@ -457,13 +436,6 @@
 			files = (
 				99804272225BF7F50008B67F /* Assets.xcassets in Resources */,
 				99804284225D94400008B67F /* presidents.plist in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		99B71A83227A9AA3002071C7 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -504,21 +476,17 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		99B71A81227A9AA3002071C7 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		99B71A93227AA0F6002071C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				998153622282496A00AEB6E5 /* String+Util.swift in Sources */,
 				99269DB7227CE54F007D61CD /* TableMiner.swift in Sources */,
+				999A86F4229E30C900D35F86 /* SovereignStateFlagsTool.swift in Sources */,
 				99B71A9A227AA0F6002071C7 /* main.swift in Sources */,
 				99269DB5227CE4EA007D61CD /* SwiftSoup+Table.swift in Sources */,
+				99CAF262229E4E9900DA1AD5 /* Data+Util.swift in Sources */,
+				999A86F2229E2FE100D35F86 /* PresidentCollectionTool.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -799,50 +767,6 @@
 			};
 			name = Release;
 		};
-		99B71A91227A9AB0002071C7 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = WikiTableRipper/WikiTableRipper.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = S39RJSR774;
-				INFOPLIST_FILE = WikiTableRipper/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = "cory-knapp.WikiTableRipper";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 4.2;
-			};
-			name = Debug;
-		};
-		99B71A92227A9AB0002071C7 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = WikiTableRipper/WikiTableRipper.entitlements;
-				CODE_SIGN_IDENTITY = "Mac Developer";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = S39RJSR774;
-				INFOPLIST_FILE = WikiTableRipper/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-				);
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
-				PRODUCT_BUNDLE_IDENTIFIER = "cory-knapp.WikiTableRipper";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = macosx;
-				SWIFT_VERSION = 4.2;
-			};
-			name = Release;
-		};
 		99B71A9C227AA0F6002071C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -930,15 +854,6 @@
 			buildConfigurations = (
 				99804280225BF7F50008B67F /* Debug */,
 				99804281225BF7F50008B67F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		99B71A90227A9AB0002071C7 /* Build configuration list for PBXNativeTarget "WikiTableRipper" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				99B71A91227A9AB0002071C7 /* Debug */,
-				99B71A92227A9AB0002071C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
