@@ -28,8 +28,6 @@
 		9980426E225BF7F40008B67F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980426D225BF7F40008B67F /* ExtensionDelegate.swift */; };
 		99804270225BF7F40008B67F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980426F225BF7F40008B67F /* NotificationController.swift */; };
 		99804272225BF7F50008B67F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99804271225BF7F50008B67F /* Assets.xcassets */; };
-		99804283225D94400008B67F /* presidents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99804282225D94400008B67F /* presidents.plist */; };
-		99804284225D94400008B67F /* presidents.plist in Resources */ = {isa = PBXBuildFile; fileRef = 99804282225D94400008B67F /* presidents.plist */; };
 		99804288225D96650008B67F /* TriviaCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99804287225D96650008B67F /* TriviaCollection.swift */; };
 		99804289225D96650008B67F /* TriviaCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99804287225D96650008B67F /* TriviaCollection.swift */; };
 		9980428B225D97590008B67F /* PresidentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980428A225D97590008B67F /* PresidentCollection.swift */; };
@@ -42,6 +40,7 @@
 		999A86F4229E30C900D35F86 /* SovereignStateFlagsTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A86F3229E30C900D35F86 /* SovereignStateFlagsTool.swift */; };
 		99B71A9A227AA0F6002071C7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B71A99227AA0F6002071C7 /* main.swift */; };
 		99B71A9E227AA184002071C7 /* SwiftSoup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B71A7F227A91AC002071C7 /* SwiftSoup.framework */; };
+		99C80F0022A78CCA00484BBB /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 99C80EFF22A78CCA00484BBB /* Data */; };
 		99CAF262229E4E9900DA1AD5 /* Data+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CAF261229E4E9900DA1AD5 /* Data+Util.swift */; };
 		99CAF264229E6CFA00DA1AD5 /* SovereignStateFlagsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CAF263229E6CFA00DA1AD5 /* SovereignStateFlagsCollection.swift */; };
 		99F19D3C228BC18500EE8832 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F19D3B228BC18500EE8832 /* QuestionViewController.swift */; };
@@ -125,7 +124,6 @@
 		99804271225BF7F50008B67F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99804273225BF7F50008B67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99804274225BF7F50008B67F /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
-		99804282225D94400008B67F /* presidents.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = presidents.plist; sourceTree = "<group>"; };
 		99804287225D96650008B67F /* TriviaCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaCollection.swift; sourceTree = "<group>"; };
 		9980428A225D97590008B67F /* PresidentCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentCollection.swift; sourceTree = "<group>"; };
 		998153612282496A00AEB6E5 /* String+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Util.swift"; sourceTree = "<group>"; };
@@ -137,6 +135,7 @@
 		99B71A7F227A91AC002071C7 /* SwiftSoup.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftSoup.framework; path = Carthage/Build/Mac/SwiftSoup.framework; sourceTree = "<group>"; };
 		99B71A97227AA0F6002071C7 /* WikiTableMinerTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WikiTableMinerTool; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B71A99227AA0F6002071C7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		99C80EFF22A78CCA00484BBB /* Data */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Data; sourceTree = "<group>"; };
 		99CAF261229E4E9900DA1AD5 /* Data+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Util.swift"; sourceTree = "<group>"; };
 		99CAF263229E6CFA00DA1AD5 /* SovereignStateFlagsCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SovereignStateFlagsCollection.swift; sourceTree = "<group>"; };
 		99F19D3B228BC18500EE8832 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
@@ -181,14 +180,14 @@
 		9980423C225BF7E90008B67F = {
 			isa = PBXGroup;
 			children = (
+				99C80EFF22A78CCA00484BBB /* Data */,
 				99B71A72227A8BBB002071C7 /* Cartfile */,
 				99804247225BF7E90008B67F /* WristQuiz */,
 				9980425B225BF7F10008B67F /* WristQuiz WatchKit App */,
 				9980426A225BF7F40008B67F /* WristQuiz WatchKit Extension */,
-				99B71A98227AA0F6002071C7 /* WikiTableMinerTool */,
 				99804286225D962A0008B67F /* Shared */,
+				99B71A98227AA0F6002071C7 /* WikiTableMinerTool */,
 				99804246225BF7E90008B67F /* Products */,
-				99804285225D944E0008B67F /* Trivia Data */,
 				99B71A7E227A91AB002071C7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -242,14 +241,6 @@
 				99804274225BF7F50008B67F /* PushNotificationPayload.apns */,
 			);
 			path = "WristQuiz WatchKit Extension";
-			sourceTree = "<group>";
-		};
-		99804285225D944E0008B67F /* Trivia Data */ = {
-			isa = PBXGroup;
-			children = (
-				99804282225D94400008B67F /* presidents.plist */,
-			);
-			path = "Trivia Data";
 			sourceTree = "<group>";
 		};
 		99804286225D962A0008B67F /* Shared */ = {
@@ -417,10 +408,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99C80F0022A78CCA00484BBB /* Data in Resources */,
 				99804253225BF7F10008B67F /* LaunchScreen.storyboard in Resources */,
 				99804250225BF7F10008B67F /* Assets.xcassets in Resources */,
 				9980424E225BF7E90008B67F /* Main.storyboard in Resources */,
-				99804283225D94400008B67F /* presidents.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,7 +429,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				99804272225BF7F50008B67F /* Assets.xcassets in Resources */,
-				99804284225D94400008B67F /* presidents.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

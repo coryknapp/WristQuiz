@@ -9,7 +9,7 @@
 import Foundation
 import SwiftSoup
 
-func getPresidentData() {
+func getPresidentData() throws -> String{
     // Get the raw html from wikipedia
     let wikiURL = "https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States" //CommandLine.arguments[1]
 
@@ -39,8 +39,9 @@ func getPresidentData() {
 
     do {
         let htmlString = try String(contentsOf: URL(string: wikiURL)!, encoding: .utf8)
-        try TableMiner.generatePlist(html: htmlString, instructions: presInstruct)
+        return try TableMiner.generatePlist(html: htmlString, instructions: presInstruct)
     } catch let error {
         print("Error: \(error)")
+        throw error
     }
 }

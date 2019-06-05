@@ -35,12 +35,18 @@ struct TableMinerInstructions{
 }
 
 class TableMiner {
-    static func generatePlist(html: String, instructions: TableMinerInstructions) throws{
+    static func generatePlist(html: String, instructions: TableMinerInstructions) throws -> String{
         let doc = try SwiftSoup.parse(html)
         let tableElem = try doc.tables().get(instructions.tableIndex)
         var rowIterator = try tableElem.makeTableRowIterator()
         
-        var plistString = ""
+        var plistString = """
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <array>
+        <dict>
+"""
         
         while let row = rowIterator.next(){
             var bailFlag = false
@@ -69,6 +75,10 @@ class TableMiner {
             }
         }
         
-        print(plistString)
+        plistString.append("""
+    </array>
+</plist>
+""")
+        return plistString
     }
 }

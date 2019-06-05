@@ -63,7 +63,7 @@
       </BuildableProductRunnable>
       <CommandLineArguments>
          <CommandLineArgument
-            argument = "file://$PROJECT_DIR/images"
+            argument = "file://$PROJECT_DIR/Data"
             isEnabled = "YES">
          </CommandLineArgument>
       </CommandLineArguments>

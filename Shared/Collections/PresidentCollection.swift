@@ -116,8 +116,8 @@ class PresidentCollection: TriviaCollection {
     
     func loadDataFile()
     {
-        if let path = Bundle.main.path(forResource: "presidents", ofType: "plist"),
-            let data = FileManager.default.contents(atPath: path)
+        let path = Bundle.main.bundlePath + "/Data/presidents.plist"
+        if let data = FileManager.default.contents(atPath: path)
         {
             enteries = try! PropertyListDecoder().decode(Array<PresidentEntry>.self, from: data)
         }
