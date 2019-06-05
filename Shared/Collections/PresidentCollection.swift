@@ -55,28 +55,28 @@ class PresidentCollection: TriviaCollection {
         let subFormat = ThreeOptionMutipleChoiceTextTypes.random()
         let options = enteries.shuffledRandomConsecutiveElements(count: 3)!
         // pick three unique preses
-        let question = TriviaQuestion(type: TriviaQuestionFormat.ThreeOptionMutipleChoiceText)
+        let question = TriviaQuestion()
         switch subFormat {
         case .whoCameFirst:
-            question.options = options.map{ $0.name }
-            question.question = "Who came first?"
+            question.stringOptions = options.map{ $0.name }
+            question.stringQuestion = "Who came first?"
             question.answerIndex = options.indexOfMax(by: {a, b in a.number < b.number})!
-            question.failMessage = "\(question.options[question.answerIndex]) was the first of the three"
+            question.failMessage = "\(question.stringOptions![question.answerIndex]) was the first of the three"
         case .whoCameLast:
-            question.options = options.map{ $0.name }
-            question.question = "Who came last?"
+            question.stringOptions = options.map{ $0.name }
+            question.stringQuestion = "Who came last?"
             question.answerIndex = options.indexOfMax(by: {a, b in a.number > b.number})!
-            question.failMessage = "\(question.options[question.answerIndex]) was the last of the three"
+            question.failMessage = "\(question.stringOptions![question.answerIndex]) was the last of the three"
         case .numberToName:
-            question.options = options.map{ $0.name }
+            question.stringOptions = options.map{ $0.name }
             let (index, answer) = options.randomElementAndIndex()
-            question.question = "Who was number \(answer!.number)?"
+            question.stringQuestion = "Who was number \(answer!.number)?"
             question.answerIndex = index!
-            question.failMessage = "\(question.options[question.answerIndex]) was the \(formatter.string(from:NSNumber(value: answer!.number))!) president"
+            question.failMessage = "\(question.stringOptions![question.answerIndex]) was the \(formatter.string(from:NSNumber(value: answer!.number))!) president"
         case .nameToNumber:
-            question.options = options.map{ String($0.number) }
+            question.stringOptions = options.map{ String($0.number) }
             let (index, answer) = options.randomElementAndIndex()
-            question.question = "What was \(answer!.name)'s number?"
+            question.stringQuestion = "What was \(answer!.name)'s number?"
             question.answerIndex = index!
             question.failMessage = "\(options[index!].name) was the \(formatter.string(from:NSNumber(value: answer!.number))!) president"
         //default:
@@ -97,13 +97,13 @@ class PresidentCollection: TriviaCollection {
     func sanityCheck(_ question: TriviaQuestion) -> Bool{
         
         // make sure the options doesn't contain repeats
-        if question.options.containsRepeatedElement(){
+        if question.stringOptions!.containsRepeatedElement(){
             return false
         }
         
         // For the Cleveland case
         // make sure our options don't include 22 and 24
-        if( question.options.contains("22") && question.options.contains("24")){
+        if( question.stringOptions!.contains("22") && question.stringOptions!.contains("24")){
             return false
         }
         

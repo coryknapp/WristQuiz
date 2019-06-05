@@ -33,7 +33,7 @@ class ViewController: GameSessionTrackingViewController {
             if result == .right {
                 resultText.attributedText = NSAttributedString(string: "Correct", attributes: [NSAttributedString.Key.font : Style.successFont, NSAttributedString.Key.foregroundColor: Style.successColor])
             }else{
-                resultText.attributedText = NSAttributedString(string: gameSession!.currentQuestion!.failMessage, attributes: [NSAttributedString.Key.font : Style.failFont, NSAttributedString.Key.foregroundColor: Style.failColor])
+                resultText.attributedText = NSAttributedString(string: gameSession!.currentQuestion!.failMessage!, attributes: [NSAttributedString.Key.font : Style.failFont, NSAttributedString.Key.foregroundColor: Style.failColor])
             }
         }
         

@@ -43,6 +43,7 @@
 		99B71A9A227AA0F6002071C7 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99B71A99227AA0F6002071C7 /* main.swift */; };
 		99B71A9E227AA184002071C7 /* SwiftSoup.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99B71A7F227A91AC002071C7 /* SwiftSoup.framework */; };
 		99CAF262229E4E9900DA1AD5 /* Data+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CAF261229E4E9900DA1AD5 /* Data+Util.swift */; };
+		99CAF264229E6CFA00DA1AD5 /* SovereignStateFlagsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CAF263229E6CFA00DA1AD5 /* SovereignStateFlagsCollection.swift */; };
 		99F19D3C228BC18500EE8832 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99F19D3B228BC18500EE8832 /* QuestionViewController.swift */; };
 		99F41A9A22712F0F005CDD2F /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9900172B2269B17200A06AC0 /* Util.swift */; };
 /* End PBXBuildFile section */
@@ -137,6 +138,7 @@
 		99B71A97227AA0F6002071C7 /* WikiTableMinerTool */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = WikiTableMinerTool; sourceTree = BUILT_PRODUCTS_DIR; };
 		99B71A99227AA0F6002071C7 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		99CAF261229E4E9900DA1AD5 /* Data+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Data+Util.swift"; sourceTree = "<group>"; };
+		99CAF263229E6CFA00DA1AD5 /* SovereignStateFlagsCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SovereignStateFlagsCollection.swift; sourceTree = "<group>"; };
 		99F19D3B228BC18500EE8832 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -171,6 +173,7 @@
 			children = (
 				99804287225D96650008B67F /* TriviaCollection.swift */,
 				9980428A225D97590008B67F /* PresidentCollection.swift */,
+				99CAF263229E6CFA00DA1AD5 /* SovereignStateFlagsCollection.swift */,
 			);
 			path = Collections;
 			sourceTree = "<group>";
@@ -455,6 +458,7 @@
 				99F19D3C228BC18500EE8832 /* QuestionViewController.swift in Sources */,
 				999A86EB2298CC4700D35F86 /* GameSession.swift in Sources */,
 				999A86ED229A0B0F00D35F86 /* GameSessionTrackingViewController.swift in Sources */,
+				99CAF264229E6CFA00DA1AD5 /* SovereignStateFlagsCollection.swift in Sources */,
 				99804249225BF7E90008B67F /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

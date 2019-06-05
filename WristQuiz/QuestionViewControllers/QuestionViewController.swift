@@ -20,7 +20,7 @@ class QuestionViewController : GameSessionTrackingViewController{
         super.viewDidLoad()
         assert(gameSession != nil)
 
-        QuestionTextLabel?.text = gameSession!.currentQuestion!.question
+        QuestionTextLabel?.text = gameSession!.currentQuestion!.stringQuestion
     }
     
     func returnToMain(){

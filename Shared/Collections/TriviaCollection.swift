@@ -8,22 +8,36 @@
 
 import Foundation
 
-public enum TriviaQuestionFormat {
+#if os(iOS)
+import UIKit
+#endif
+
+#if os(watchOS)
+import WatchKit
+#endif
+
+public enum TriviaQuestionFormat{
     case ThreeOptionMutipleChoiceText
-    //case ThreeOptionMutipleChoiceImage
-    //case TwoOptionImage
+    case FourOptionMutipleChoiceImage
+    case TwoOptionImage
 }
 
 public class TriviaQuestion{
-    public var type: TriviaQuestionFormat
-    public var question: String = ""
-    public var options: Array<String> = []
-    public var failMessage: String = ""
-    public var answerIndex: Int = 0
     
-    init(type: TriviaQuestionFormat) {
-        self.type = type
-    }
+    #if os(iOS)
+    public typealias Image = UIImage
+    #endif
+    
+    #if os(watchOS)
+    public typealias Image = WKInterfaceImage
+    #endif
+    
+    public var stringQuestion: String?
+    public var imageQuestion: Image?
+    public var stringOptions: Array<String>?
+    public var imageOptions: Array<Image>?
+    public var failMessage: String?
+    public var answerIndex: Int = 0
 }
 
 protocol TriviaCollection{

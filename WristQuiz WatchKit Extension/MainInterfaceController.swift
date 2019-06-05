@@ -30,7 +30,7 @@ class MainInterfaceController: WKInterfaceController {
             if(gameSession.submitAnswer(gameSession.responseIndex!) == .right){
                 resultText.setAttributedText(NSAttributedString(string: "Correct", attributes: [NSAttributedString.Key.font : Style.successFont, NSAttributedString.Key.foregroundColor: Style.successColor]))
             }else{
-                resultText.setAttributedText(NSAttributedString(string: gameSession.currentQuestion!.failMessage, attributes: [NSAttributedString.Key.font : Style.failFont, NSAttributedString.Key.foregroundColor: Style.failColor]))
+                resultText.setAttributedText(NSAttributedString(string: gameSession.currentQuestion!.failMessage!, attributes: [NSAttributedString.Key.font : Style.failFont, NSAttributedString.Key.foregroundColor: Style.failColor]))
             }
         }
         
