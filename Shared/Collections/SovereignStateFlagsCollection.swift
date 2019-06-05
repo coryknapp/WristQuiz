@@ -24,11 +24,11 @@ class SovereignStateFlagsCollection: TriviaCollection {
         let question = TriviaQuestion()
         
         // pick flags randomly
-        //let options = enteries.randomElements(count: 3)!
-        //let (answerIndex, answer) = options.randomElementAndIndex()
-        // question.options = options.map{ $0.name }
+        let options = enteries.randomElements(count: 3)!
+        let (answerIndex, _) = options.randomElementAndIndex()
+        //question.imageOptions = options.map{ $0.flagId }
         // question.question = "Who came first?"
-        // question.answerIndex = options.indexOfMax(by: {a, b in a.number < b.number})!
+        question.answerIndex = answerIndex!
         // question.failMessage = "\(question.options[question.answerIndex]) was the first of the three"
         return question
     }
@@ -39,8 +39,8 @@ class SovereignStateFlagsCollection: TriviaCollection {
     
     func loadDataFile()
     {
-        if let path = Bundle.main.path(forResource: "sovereignstateflags", ofType: "plist"),
-            let data = FileManager.default.contents(atPath: path)
+        let path = Bundle.main.bundlePath + "/Data/presidents.plist"
+        if let data = FileManager.default.contents(atPath: path)
         {
             enteries = try! PropertyListDecoder().decode(Array<FlagEntry>.self, from: data)
         }

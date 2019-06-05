@@ -9,7 +9,7 @@
 import Foundation
 import SwiftSoup
 
-func getSovereignStateFlags(){
+func getSovereignStateFlags() -> String{
     let wikiURL = "https://en.wikipedia.org/wiki/Gallery_of_sovereign_state_flags"
     
     var plistXMLString = """
@@ -41,6 +41,6 @@ func getSovereignStateFlags(){
     </array>
 </plist>
 """)
-    
+    return plistXMLString
     
 }
