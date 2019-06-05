@@ -35,10 +35,10 @@ class ThreeOptionInterfaceController: TriviaQuestionInterfaceController{
         super.awake(withContext: context)
         
         // Configure interface objects here.
-        questionField.setText(gameSession!.currentQuestion!.question)
-        firstButton.setTitle(gameSession!.currentQuestion!.options[0])
-        secondButton.setTitle(gameSession!.currentQuestion!.options[1])
-        thirdButton.setTitle(gameSession!.currentQuestion!.options[2])
+        questionField.setText(gameSession!.currentQuestion!.stringQuestion)
+        firstButton.setTitle(gameSession!.currentQuestion!.stringOptions![0])
+        secondButton.setTitle(gameSession!.currentQuestion!.stringOptions![1])
+        thirdButton.setTitle(gameSession!.currentQuestion!.stringOptions![2])
     }
     
     override func willActivate() {

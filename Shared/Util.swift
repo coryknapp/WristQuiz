@@ -11,7 +11,6 @@ import Foundation
 extension Array {
     
     //Random selection
-    
     func randomElement() -> Element? {
         if isEmpty { return nil }
         let index = Int(arc4random_uniform(UInt32(self.count)))
@@ -45,7 +44,7 @@ extension Array {
         }
         return returnArray
     }
-    
+
     // Other
     func indexOfMax(by areInIncreasingOrder: (Element, Element) throws -> Bool) rethrows -> Int?{
         var best = self.first!
