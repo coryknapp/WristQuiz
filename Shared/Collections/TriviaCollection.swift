@@ -29,7 +29,7 @@ public class TriviaQuestion{
     #endif
     
     #if os(watchOS)
-    public typealias Image = WKInterfaceImage
+    public typealias Image = WKImage
     #endif
     
     public var stringQuestion: String?

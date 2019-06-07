@@ -25,7 +25,7 @@ class ViewController: GameSessionTrackingViewController {
             
             // now set up a new GameSession
             gameSession = GameSession()
-            gameSession?.triviaCollection = PresidentCollection()
+            gameSession?.triviaCollection = SovereignStateFlagsCollection()
             
         }else{
             // we're coming back from answering a question
@@ -66,11 +66,19 @@ class ViewController: GameSessionTrackingViewController {
         
         // assuming three response questions for now
         //WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: "ThreeOptionInterfaceController", context: nextQuestion)])
-        var newController = self.storyboard?.instantiateViewController(withIdentifier: "ThreeOptionViewController")
+        var newController = controller(forQuestion: (gameSession?.currentQuestion)!)
         
         
-        (newController as! QuestionViewController).gameSession = gameSession
-        self.present(newController!, animated: true, completion: nil)
+        newController.gameSession = gameSession
+        self.present(newController, animated: true, completion: nil)
+    }
+    
+    func controller(forQuestion question: TriviaQuestion) -> QuestionViewController {
+        if question.stringOptions != nil {
+            return self.storyboard?.instantiateViewController(withIdentifier: QuestionViewController.QuestionViewControllerTitles.ThreeStringOptionViewController.rawValue) as! QuestionViewController
+        } else {
+            return self.storyboard?.instantiateViewController(withIdentifier: QuestionViewController.QuestionViewControllerTitles.FourImageOptionViewController.rawValue) as! QuestionViewController
+        }
     }
 }
 
