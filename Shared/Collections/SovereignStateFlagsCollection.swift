@@ -8,14 +8,19 @@
 
 import Foundation
 
+#if os(iOS)
+import UIKit
+#endif
 
-import Foundation
+#if os(watchOS)
+import WatchKit
+#endif
 
 class SovereignStateFlagsCollection: TriviaCollection {
     
     struct FlagEntry : Codable{
         var state: String
-        var flagId: String
+        var image_id: String
     }
 
     var enteries: Array<FlagEntry>!
@@ -25,11 +30,11 @@ class SovereignStateFlagsCollection: TriviaCollection {
         
         // pick flags randomly
         let options = enteries.randomElements(count: 3)!
-        let (answerIndex, _) = options.randomElementAndIndex()
-        //question.imageOptions = options.map{ $0.flagId }
-        // question.question = "Who came first?"
+        let (answerIndex, answerEntity) = options.randomElementAndIndex()
+        question.imageOptions = options.map{ TriviaQuestion.Image(withId: $0.image_id) }
+        question.stringQuestion = "\(answerEntity?.state ?? "SOMETHING WENT WRONG")?"
         question.answerIndex = answerIndex!
-        // question.failMessage = "\(question.options[question.answerIndex]) was the first of the three"
+        question.failMessage = "Wrong" // TODO more useful message
         return question
     }
     
@@ -39,7 +44,7 @@ class SovereignStateFlagsCollection: TriviaCollection {
     
     func loadDataFile()
     {
-        let path = Bundle.main.bundlePath + "/Data/presidents.plist"
+        let path = Bundle.main.bundlePath + "/Data/sovereignstateflags.plist"
         if let data = FileManager.default.contents(atPath: path)
         {
             enteries = try! PropertyListDecoder().decode(Array<FlagEntry>.self, from: data)

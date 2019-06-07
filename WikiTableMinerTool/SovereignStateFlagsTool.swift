@@ -17,7 +17,6 @@ func getSovereignStateFlags() -> String{
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
     <array>
-        <dict>
 """
     
     do {
@@ -26,11 +25,13 @@ func getSovereignStateFlags() -> String{
         let doc = try SwiftSoup.parse(htmlString)
         let galleryboxes = try doc.select(".gallerybox")
         for box in galleryboxes {
+            plistXMLString.appendWithNewLine("<dict>", indent: 2)
             plistXMLString.appendWithNewLine("<key>state</key>", indent: 3)
             plistXMLString.appendWithNewLine(try "<string>\(box.text())</string>", indent: 3)
             plistXMLString.appendWithNewLine("<key>image_id</key>", indent: 3)
             let imageURL = URL(string: "https:" + (try box.select("img").first()?.attr("src"))!)!
             plistXMLString.appendWithNewLine("<string>\(downloadFile(url: imageURL))</string>", indent: 3)
+            plistXMLString.appendWithNewLine("</dict>", indent: 2)
         }
         
     } catch let error {

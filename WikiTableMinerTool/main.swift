@@ -13,7 +13,7 @@ let resourceFolder = CommandLine.arguments[1]
 
 print("writing to \"\(resourceFolder)\"")
 
-FileManager().createDirectory(atPath: resourceFolder, withIntermediateDirectories: false)
+try! FileManager().createDirectory(atPath: resourceFolder, withIntermediateDirectories: true)
 
 print("building to president.plist")
 try getPresidentData().write(to: URL(fileURLWithPath: resourceFolder).appendingPathComponent("presidents.plist"), atomically: true, encoding: .utf8)
