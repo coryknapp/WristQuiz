@@ -45,7 +45,7 @@ extension Array {
         if self.count < count { return nil }
         var copy = Array<Element>(self)
         var returnArray = Array<Element>()
-        for _ in 0...count{
+        for _ in 0...count-1{
             let (i, e) = copy.randomElementAndIndex()
             copy.remove(at: i!)
             returnArray.append(e!)

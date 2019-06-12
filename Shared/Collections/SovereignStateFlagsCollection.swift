@@ -29,7 +29,7 @@ class SovereignStateFlagsCollection: TriviaCollection {
         let question = TriviaQuestion()
         
         // pick flags randomly
-        let options = enteries.randomElements(count: 3)!
+        let options = enteries.randomElements(count: 4)!
         let (answerIndex, answerEntity) = options.randomElementAndIndex()
         question.imageOptions = options.map{ TriviaQuestion.Image(withId: $0.image_id) }
         question.stringQuestion = "\(answerEntity?.state ?? "SOMETHING WENT WRONG")?"
