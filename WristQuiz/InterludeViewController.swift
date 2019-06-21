@@ -8,9 +8,10 @@
 
 import UIKit
 
-class ViewController: GameSessionTrackingViewController {
+class InterludeViewController: GameSessionTrackingViewController {
 
-    @IBOutlet var resultText: UILabel!
+    // we want a view that can display text or an image, so we'll use an UIButton as a hack for now.
+    @IBOutlet var resultField: InterfaceElement!
     @IBOutlet var countDownTimerText: UILabel!
 
     var timer: Timer!
@@ -20,20 +21,24 @@ class ViewController: GameSessionTrackingViewController {
         super.viewDidLoad()
         if gameSession == nil{
             // we're just starting the app.  Display a splash screen.
-            resultText.text = "Get Ready!"
-            resultText.textColor = Style.successColor
-            
+            resultField.setSuccessText( "Get Ready!" )
+
             // now set up a new GameSession
             gameSession = GameSession()
             gameSession?.triviaCollection = SovereignStateFlagsCollection()
             
         }else{
             // we're coming back from answering a question
-            var result = gameSession?.submitAnswer((gameSession?.responseIndex)!)
+            let result = gameSession?.submitAnswer((gameSession?.responseIndex)!)
             if result == .right {
-                resultText.attributedText = NSAttributedString(string: "Correct", attributes: [NSAttributedString.Key.font : Style.successFont, NSAttributedString.Key.foregroundColor: Style.successColor])
+                resultField.setSuccessText("Correct!")
             }else{
-                resultText.attributedText = NSAttributedString(string: gameSession!.currentQuestion!.failMessage!, attributes: [NSAttributedString.Key.font : Style.failFont, NSAttributedString.Key.foregroundColor: Style.failColor])
+                if gameSession!.currentQuestion!.imageOptions != nil{
+                    // we want to show the user the correct image along with the failMessage
+                    resultField.setImage( gameSession!.currentQuestion!.imageOptions![gameSession!.currentQuestion!.answerIndex], for: .normal)
+                    
+                }
+                resultField.setFailText(gameSession!.currentQuestion!.failMessage ?? "")
             }
         }
         

@@ -15,8 +15,9 @@
 		99201A9522A7A74700577C24 /* GameSessionTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99201A9422A7A74600577C24 /* GameSessionTrackingViewController.swift */; };
 		99269DB5227CE4EA007D61CD /* SwiftSoup+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99269DB4227CE4EA007D61CD /* SwiftSoup+Table.swift */; };
 		99269DB7227CE54F007D61CD /* TableMiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99269DB6227CE54F007D61CD /* TableMiner.swift */; };
+		996C2E5122B0C48500209302 /* InterfaceElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C2E5022B0C48500209302 /* InterfaceElement.swift */; };
 		99804249225BF7E90008B67F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99804248225BF7E90008B67F /* AppDelegate.swift */; };
-		9980424B225BF7E90008B67F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980424A225BF7E90008B67F /* ViewController.swift */; };
+		9980424B225BF7E90008B67F /* InterludeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980424A225BF7E90008B67F /* InterludeViewController.swift */; };
 		9980424E225BF7E90008B67F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9980424C225BF7E90008B67F /* Main.storyboard */; };
 		99804250225BF7F10008B67F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9980424F225BF7F10008B67F /* Assets.xcassets */; };
 		99804253225BF7F10008B67F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99804251225BF7F10008B67F /* LaunchScreen.storyboard */; };
@@ -105,9 +106,10 @@
 		99201A9422A7A74600577C24 /* GameSessionTrackingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSessionTrackingViewController.swift; sourceTree = "<group>"; };
 		99269DB4227CE4EA007D61CD /* SwiftSoup+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftSoup+Table.swift"; sourceTree = "<group>"; };
 		99269DB6227CE54F007D61CD /* TableMiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMiner.swift; sourceTree = "<group>"; };
+		996C2E5022B0C48500209302 /* InterfaceElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceElement.swift; sourceTree = "<group>"; };
 		99804245225BF7E90008B67F /* WristQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WristQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		99804248225BF7E90008B67F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9980424A225BF7E90008B67F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9980424A225BF7E90008B67F /* InterludeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterludeViewController.swift; sourceTree = "<group>"; };
 		9980424D225BF7E90008B67F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9980424F225BF7F10008B67F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99804252225BF7F10008B67F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -205,13 +207,14 @@
 			isa = PBXGroup;
 			children = (
 				99804248225BF7E90008B67F /* AppDelegate.swift */,
-				9980424A225BF7E90008B67F /* ViewController.swift */,
+				9980424A225BF7E90008B67F /* InterludeViewController.swift */,
 				99F19D3B228BC18500EE8832 /* QuestionViewController.swift */,
 				99201A9422A7A74600577C24 /* GameSessionTrackingViewController.swift */,
 				9980424C225BF7E90008B67F /* Main.storyboard */,
 				9980424F225BF7F10008B67F /* Assets.xcassets */,
 				99804251225BF7F10008B67F /* LaunchScreen.storyboard */,
 				99804254225BF7F10008B67F /* Info.plist */,
+				996C2E5022B0C48500209302 /* InterfaceElement.swift */,
 			);
 			path = WristQuiz;
 			sourceTree = "<group>";
@@ -429,12 +432,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				99804288225D96650008B67F /* TriviaCollection.swift in Sources */,
-				9980424B225BF7E90008B67F /* ViewController.swift in Sources */,
+				9980424B225BF7E90008B67F /* InterludeViewController.swift in Sources */,
 				99F41A9A22712F0F005CDD2F /* Util.swift in Sources */,
 				9980428B225D97590008B67F /* PresidentCollection.swift in Sources */,
 				99008CA5228A375600D41D54 /* Style.swift in Sources */,
 				99F19D3C228BC18500EE8832 /* QuestionViewController.swift in Sources */,
 				999A86EB2298CC4700D35F86 /* GameSession.swift in Sources */,
+				996C2E5122B0C48500209302 /* InterfaceElement.swift in Sources */,
 				99CAF264229E6CFA00DA1AD5 /* SovereignStateFlagsCollection.swift in Sources */,
 				99201A9522A7A74700577C24 /* GameSessionTrackingViewController.swift in Sources */,
 				99804249225BF7E90008B67F /* AppDelegate.swift in Sources */,
