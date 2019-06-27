@@ -20,7 +20,7 @@ class GameSession {
     var goalQuestionCount = 25
     
     // MARK: - Session values
-    var triviaCollection : TriviaCollection?
+    var triviaCollections = Array<TriviaCollection>()
     
     var currentQuestion : TriviaQuestion?
     var responseIndex : Int?
@@ -42,8 +42,9 @@ class GameSession {
     }
     
     func prepareNewQuestion() {
-        assert(triviaCollection != nil)
-        currentQuestion = triviaCollection?.getQuestion(difficulty: 0)
+        // pick a random collection
+        let triviaCollection = triviaCollections.randomElement()!
+        currentQuestion = triviaCollection.getQuestion(difficulty: 0)
         responseIndex = nil
     }
     

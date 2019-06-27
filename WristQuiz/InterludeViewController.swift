@@ -20,16 +20,11 @@ class InterludeViewController: GameSessionTrackingViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         if gameSession == nil{
-            // we're just starting the app.  Display a splash screen.
-            resultField.setSuccessText( "Get Ready!" )
-
-            // now set up a new GameSession
-            gameSession = GameSession()
-            gameSession?.triviaCollection = SovereignStateFlagsCollection()
-            
-        }else{
+            abort()
+        }
+        if gameSession!.responseIndex != nil{
             // we're coming back from answering a question
-            let result = gameSession?.submitAnswer((gameSession?.responseIndex)!)
+            let result = gameSession?.submitAnswer((gameSession!.responseIndex)!)
             if result == .right {
                 resultField.setSuccessText("Correct!")
             }else{
@@ -49,6 +44,10 @@ class InterludeViewController: GameSessionTrackingViewController {
         refreshCountDownTimerText()
     }
     
+    @IBAction func optionsButtonPressed(){
+        
+    }
+    
     @objc func timerFired(){
         countDownSecond -= 1
         
@@ -64,7 +63,6 @@ class InterludeViewController: GameSessionTrackingViewController {
     }
     
     func setUpNewQuestion(){
-        let collection = PresidentCollection()
         gameSession?.prepareNewQuestion()
 
         timer.invalidate()
