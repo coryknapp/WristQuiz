@@ -12,6 +12,8 @@
 		9900172C2269B17200A06AC0 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9900172B2269B17200A06AC0 /* Util.swift */; };
 		99008CA5228A375600D41D54 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99008CA4228A375600D41D54 /* Style.swift */; };
 		99008CA6228A37D900D41D54 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99008CA4228A375600D41D54 /* Style.swift */; };
+		9919560022C084B7009E59B6 /* OptionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 991955FF22C084B7009E59B6 /* OptionsViewController.swift */; };
+		9919560522C09049009E59B6 /* CollectionManifest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9919560422C09049009E59B6 /* CollectionManifest.swift */; };
 		99201A9522A7A74700577C24 /* GameSessionTrackingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99201A9422A7A74600577C24 /* GameSessionTrackingViewController.swift */; };
 		99269DB5227CE4EA007D61CD /* SwiftSoup+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99269DB4227CE4EA007D61CD /* SwiftSoup+Table.swift */; };
 		99269DB7227CE54F007D61CD /* TableMiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99269DB6227CE54F007D61CD /* TableMiner.swift */; };
@@ -103,6 +105,8 @@
 		990017292269700900A06AC0 /* TriviaQuestionInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaQuestionInterfaceController.swift; sourceTree = "<group>"; };
 		9900172B2269B17200A06AC0 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		99008CA4228A375600D41D54 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		991955FF22C084B7009E59B6 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
+		9919560422C09049009E59B6 /* CollectionManifest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionManifest.swift; sourceTree = "<group>"; };
 		99201A9422A7A74600577C24 /* GameSessionTrackingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSessionTrackingViewController.swift; sourceTree = "<group>"; };
 		99269DB4227CE4EA007D61CD /* SwiftSoup+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftSoup+Table.swift"; sourceTree = "<group>"; };
 		99269DB6227CE54F007D61CD /* TableMiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMiner.swift; sourceTree = "<group>"; };
@@ -170,7 +174,6 @@
 		99008CA7228A3BDB00D41D54 /* Collections */ = {
 			isa = PBXGroup;
 			children = (
-				99804287225D96650008B67F /* TriviaCollection.swift */,
 				9980428A225D97590008B67F /* PresidentCollection.swift */,
 				99CAF263229E6CFA00DA1AD5 /* SovereignStateFlagsCollection.swift */,
 			);
@@ -207,6 +210,7 @@
 			isa = PBXGroup;
 			children = (
 				99804248225BF7E90008B67F /* AppDelegate.swift */,
+				991955FF22C084B7009E59B6 /* OptionsViewController.swift */,
 				9980424A225BF7E90008B67F /* InterludeViewController.swift */,
 				99F19D3B228BC18500EE8832 /* QuestionViewController.swift */,
 				99201A9422A7A74600577C24 /* GameSessionTrackingViewController.swift */,
@@ -248,6 +252,8 @@
 			isa = PBXGroup;
 			children = (
 				999A86EA2298CC4700D35F86 /* GameSession.swift */,
+				9919560422C09049009E59B6 /* CollectionManifest.swift */,
+				99804287225D96650008B67F /* TriviaCollection.swift */,
 				99008CA7228A3BDB00D41D54 /* Collections */,
 				9900172B2269B17200A06AC0 /* Util.swift */,
 				99008CA4228A375600D41D54 /* Style.swift */,
@@ -435,8 +441,10 @@
 				9980424B225BF7E90008B67F /* InterludeViewController.swift in Sources */,
 				99F41A9A22712F0F005CDD2F /* Util.swift in Sources */,
 				9980428B225D97590008B67F /* PresidentCollection.swift in Sources */,
+				9919560522C09049009E59B6 /* CollectionManifest.swift in Sources */,
 				99008CA5228A375600D41D54 /* Style.swift in Sources */,
 				99F19D3C228BC18500EE8832 /* QuestionViewController.swift in Sources */,
+				9919560022C084B7009E59B6 /* OptionsViewController.swift in Sources */,
 				999A86EB2298CC4700D35F86 /* GameSession.swift in Sources */,
 				996C2E5122B0C48500209302 /* InterfaceElement.swift in Sources */,
 				99CAF264229E6CFA00DA1AD5 /* SovereignStateFlagsCollection.swift in Sources */,

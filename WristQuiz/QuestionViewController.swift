@@ -79,7 +79,7 @@ class QuestionViewController : GameSessionTrackingViewController{
     
     func returnToMain(){
         assert(gameSession!.responseIndex != nil)
-        let newController = self.storyboard?.instantiateViewController(withIdentifier: "main")
+        let newController = self.storyboard?.instantiateViewController(withIdentifier: "InterludeViewController")
         (newController as! InterludeViewController).gameSession = gameSession
         self.present(newController!, animated: true, completion: nil)
     }
