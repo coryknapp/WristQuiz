@@ -36,6 +36,8 @@
 		9980428B225D97590008B67F /* PresidentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980428A225D97590008B67F /* PresidentCollection.swift */; };
 		9980428C225D97590008B67F /* PresidentCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980428A225D97590008B67F /* PresidentCollection.swift */; };
 		998153622282496A00AEB6E5 /* String+Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 998153612282496A00AEB6E5 /* String+Util.swift */; };
+		99993720230D10A100514FB1 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 99C80EFF22A78CCA00484BBB /* Data */; };
+		99993722230D11DA00514FB1 /* GameSessionTrackingInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99993721230D11DA00514FB1 /* GameSessionTrackingInterfaceController.swift */; };
 		999A86EB2298CC4700D35F86 /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A86EA2298CC4700D35F86 /* GameSession.swift */; };
 		999A86F0229A257C00D35F86 /* GameSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A86EA2298CC4700D35F86 /* GameSession.swift */; };
 		999A86F2229E2FE100D35F86 /* PresidentCollectionTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 999A86F1229E2FE100D35F86 /* PresidentCollectionTool.swift */; };
@@ -132,6 +134,7 @@
 		99804287225D96650008B67F /* TriviaCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaCollection.swift; sourceTree = "<group>"; };
 		9980428A225D97590008B67F /* PresidentCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentCollection.swift; sourceTree = "<group>"; };
 		998153612282496A00AEB6E5 /* String+Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Util.swift"; sourceTree = "<group>"; };
+		99993721230D11DA00514FB1 /* GameSessionTrackingInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSessionTrackingInterfaceController.swift; sourceTree = "<group>"; };
 		999A86EA2298CC4700D35F86 /* GameSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameSession.swift; sourceTree = "<group>"; };
 		999A86F1229E2FE100D35F86 /* PresidentCollectionTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PresidentCollectionTool.swift; sourceTree = "<group>"; };
 		999A86F3229E30C900D35F86 /* SovereignStateFlagsTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SovereignStateFlagsTool.swift; sourceTree = "<group>"; };
@@ -210,10 +213,10 @@
 			isa = PBXGroup;
 			children = (
 				99804248225BF7E90008B67F /* AppDelegate.swift */,
+				99201A9422A7A74600577C24 /* GameSessionTrackingViewController.swift */,
 				991955FF22C084B7009E59B6 /* OptionsViewController.swift */,
 				9980424A225BF7E90008B67F /* InterludeViewController.swift */,
 				99F19D3B228BC18500EE8832 /* QuestionViewController.swift */,
-				99201A9422A7A74600577C24 /* GameSessionTrackingViewController.swift */,
 				9980424C225BF7E90008B67F /* Main.storyboard */,
 				9980424F225BF7F10008B67F /* Assets.xcassets */,
 				99804251225BF7F10008B67F /* LaunchScreen.storyboard */,
@@ -236,6 +239,7 @@
 		9980426A225BF7F40008B67F /* WristQuiz WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				99993721230D11DA00514FB1 /* GameSessionTrackingInterfaceController.swift */,
 				990017272269504D00A06AC0 /* MainInterfaceController.swift */,
 				990017292269700900A06AC0 /* TriviaQuestionInterfaceController.swift */,
 				9980426B225BF7F40008B67F /* ThreeOptionInterfaceController.swift */,
@@ -426,6 +430,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99993720230D10A100514FB1 /* Data in Resources */,
 				99804272225BF7F50008B67F /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -465,6 +470,7 @@
 				9980426E225BF7F40008B67F /* ExtensionDelegate.swift in Sources */,
 				990017282269504D00A06AC0 /* MainInterfaceController.swift in Sources */,
 				9900172A2269700900A06AC0 /* TriviaQuestionInterfaceController.swift in Sources */,
+				99993722230D11DA00514FB1 /* GameSessionTrackingInterfaceController.swift in Sources */,
 				99008CA6228A37D900D41D54 /* Style.swift in Sources */,
 				9980426C225BF7F40008B67F /* ThreeOptionInterfaceController.swift in Sources */,
 			);

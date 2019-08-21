@@ -10,16 +10,7 @@ import WatchKit
 import Foundation
 
 
-class TriviaQuestionInterfaceController: WKInterfaceController {
-
-    var gameSession : GameSession?
-    
-    override func awake(withContext context: Any?) {
-        super.awake(withContext: context)
-        // Configure interface objects here.
-        
-        gameSession = (context as! GameSession);
-    }
+class TriviaQuestionInterfaceController: GameSessionTrackingViewController {    
 
     override func willActivate() {
         // This method is called when watch view controller is about to be visible to user
