@@ -120,6 +120,8 @@ class PresidentCollection: TriviaCollection {
         if let data = FileManager.default.contents(atPath: path)
         {
             enteries = try! PropertyListDecoder().decode(Array<PresidentEntry>.self, from: data)
+        } else {
+            print(path);
         }
     }
 }

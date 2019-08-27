@@ -9,7 +9,7 @@
 import WatchKit
 import Foundation
 
-class MainInterfaceController: WKInterfaceController {
+class MainInterfaceController: GameSessionTrackingViewController {
 
     @IBOutlet var resultText: WKInterfaceLabel!
     @IBOutlet var countDownTimerText: WKInterfaceLabel!
@@ -24,13 +24,18 @@ class MainInterfaceController: WKInterfaceController {
             // we're just starting the app.  Display a splash screen.
             resultText.setText("Get Ready!")
             resultText.setTextColor(Style.successColor)
+            
+            // init session
+            gameSession = GameSession()
+            gameSession!.triviaCollections.append( PresidentCollection() )
+
         }else{
             // we're coming back from answering a question
-            var gameSession = (context as! GameSession)
-            if(gameSession.submitAnswer(gameSession.responseIndex!) == .right){
+            gameSession = (context as! GameSession)
+            if(gameSession!.submitAnswer(gameSession!.responseIndex!) == .right){
                 resultText.setAttributedText(NSAttributedString(string: "Correct", attributes: [NSAttributedString.Key.font : Style.successFont, NSAttributedString.Key.foregroundColor: Style.successColor]))
             }else{
-                resultText.setAttributedText(NSAttributedString(string: gameSession.currentQuestion!.failMessage!, attributes: [NSAttributedString.Key.font : Style.failFont, NSAttributedString.Key.foregroundColor: Style.failColor]))
+                resultText.setAttributedText(NSAttributedString(string: gameSession!.currentQuestion!.failMessage!, attributes: [NSAttributedString.Key.font : Style.failFont, NSAttributedString.Key.foregroundColor: Style.failColor]))
             }
         }
         
@@ -65,13 +70,18 @@ class MainInterfaceController: WKInterfaceController {
         countDownTimerText.setText(String(countDownSecond))
     }
     
-    func setUpNewQuestion(){
-        let collection = PresidentCollection()
-        let nextQuestion = collection.getQuestion(difficulty: 0)
+    func setUpNewQuestion(){        
+        if( gameSession == nil ){
+            //set up new gameSession
+            gameSession = GameSession()
+            gameSession?.triviaCollections = [PresidentCollection()];
+        }
+ 
+        gameSession?.prepareNewQuestion()
         
         timer.invalidate()
         
         // assuming three response questions for now
-        WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: "ThreeOptionInterfaceController", context: nextQuestion)])
+        WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: "ThreeOptionInterfaceController", context: gameSession!)])
     }
 }
