@@ -16,7 +16,7 @@ print("writing to \"\(resourceFolder)\"")
 try! FileManager().createDirectory(atPath: resourceFolder, withIntermediateDirectories: true)
 
 print("building to president.plist")
-try getPresidentData().write(to: URL(fileURLWithPath: resourceFolder).appendingPathComponent("presidents.plist"), atomically: true, encoding: .utf8)
+//try getPresidentData().write(to: URL(fileURLWithPath: resourceFolder).appendingPathComponent("presidents.plist"), atomically: true, encoding: .utf8)
 
 print("building to sovereignstateflags.plist")
 try getSovereignStateFlags().write(to: URL(fileURLWithPath: resourceFolder).appendingPathComponent("sovereignstateflags.plist"), atomically: true, encoding: .utf8)

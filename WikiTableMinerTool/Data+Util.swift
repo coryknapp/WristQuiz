@@ -8,10 +8,19 @@
 
 import Foundation
 
+// download a file to the data folder, and return the name under which it was written
 func downloadFile(url: URL) -> String {
-    let uuidString = UUID().uuidString
-    let destinationUrl = URL(string: resourceFolder + "/" + uuidString)!
+    let filename = UUID().uuidString + "." + url.pathExtension
+    let destinationUrl = URL(string: resourceFolder + "/" + filename)!
     let dataFromURL = try! Data(contentsOf: url)
     try! dataFromURL.write(to: destinationUrl)
-    return uuidString
+    return filename
+}
+
+func downloadImageWithSize(url: URL, resolution: CGSize) -> String {
+    let filename = UUID().uuidString + "." + url.pathExtension
+    let destinationUrl = URL(string: resourceFolder + "/" + filename)!
+    let dataFromURL = try! Data(contentsOf: url)
+    try! dataFromURL.write(to: destinationUrl)
+    return filename
 }

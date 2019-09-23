@@ -24,13 +24,7 @@ public enum TriviaQuestionFormat{
 
 public class TriviaQuestion{
     
-    #if os(iOS)
     public typealias Image = UIImage
-    #endif
-    
-    #if os(watchOS)
-    public typealias Image = WKImage
-    #endif
     
     public var stringQuestion: String?
     public var imageQuestion: Image?
@@ -40,6 +34,13 @@ public class TriviaQuestion{
     public var answerIndex: Int = 0
 }
 
+extension TriviaQuestion.Image{
+    convenience init?(withId id: String){
+        self.init(contentsOfFile: Bundle.main.bundlePath + "/Data/" + id)
+    }
+}
+
 protocol TriviaCollection{
     func getQuestion(difficulty : Int) -> TriviaQuestion
 }
+

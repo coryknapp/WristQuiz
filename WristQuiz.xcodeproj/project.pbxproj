@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		990017282269504D00A06AC0 /* MainInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990017272269504D00A06AC0 /* MainInterfaceController.swift */; };
-		9900172A2269700900A06AC0 /* TriviaQuestionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 990017292269700900A06AC0 /* TriviaQuestionInterfaceController.swift */; };
 		9900172C2269B17200A06AC0 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9900172B2269B17200A06AC0 /* Util.swift */; };
 		99008CA5228A375600D41D54 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99008CA4228A375600D41D54 /* Style.swift */; };
 		99008CA6228A37D900D41D54 /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99008CA4228A375600D41D54 /* Style.swift */; };
@@ -18,6 +17,8 @@
 		99269DB5227CE4EA007D61CD /* SwiftSoup+Table.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99269DB4227CE4EA007D61CD /* SwiftSoup+Table.swift */; };
 		99269DB7227CE54F007D61CD /* TableMiner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99269DB6227CE54F007D61CD /* TableMiner.swift */; };
 		9934600A2315ECD0004D6724 /* Data in Resources */ = {isa = PBXBuildFile; fileRef = 99C80EFF22A78CCA00484BBB /* Data */; };
+		9934600E2315FAA7004D6724 /* QuestionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9934600D2315FAA7004D6724 /* QuestionInterfaceController.swift */; };
+		9934600F23161EB8004D6724 /* SovereignStateFlagsCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99CAF263229E6CFA00DA1AD5 /* SovereignStateFlagsCollection.swift */; };
 		996C2E5122B0C48500209302 /* InterfaceElement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 996C2E5022B0C48500209302 /* InterfaceElement.swift */; };
 		99804249225BF7E90008B67F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99804248225BF7E90008B67F /* AppDelegate.swift */; };
 		9980424B225BF7E90008B67F /* InterludeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980424A225BF7E90008B67F /* InterludeViewController.swift */; };
@@ -28,7 +29,6 @@
 		9980425E225BF7F10008B67F /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9980425C225BF7F10008B67F /* Interface.storyboard */; };
 		99804260225BF7F30008B67F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9980425F225BF7F30008B67F /* Assets.xcassets */; };
 		99804267225BF7F40008B67F /* WristQuiz WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 99804266225BF7F40008B67F /* WristQuiz WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		9980426C225BF7F40008B67F /* ThreeOptionInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980426B225BF7F40008B67F /* ThreeOptionInterfaceController.swift */; };
 		9980426E225BF7F40008B67F /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980426D225BF7F40008B67F /* ExtensionDelegate.swift */; };
 		99804270225BF7F40008B67F /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9980426F225BF7F40008B67F /* NotificationController.swift */; };
 		99804272225BF7F50008B67F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99804271225BF7F50008B67F /* Assets.xcassets */; };
@@ -104,7 +104,6 @@
 
 /* Begin PBXFileReference section */
 		990017272269504D00A06AC0 /* MainInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainInterfaceController.swift; sourceTree = "<group>"; };
-		990017292269700900A06AC0 /* TriviaQuestionInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriviaQuestionInterfaceController.swift; sourceTree = "<group>"; };
 		9900172B2269B17200A06AC0 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
 		99008CA4228A375600D41D54 /* Style.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
 		991955FF22C084B7009E59B6 /* OptionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OptionsViewController.swift; sourceTree = "<group>"; };
@@ -112,6 +111,7 @@
 		99201A9422A7A74600577C24 /* GameSessionTrackingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameSessionTrackingViewController.swift; sourceTree = "<group>"; };
 		99269DB4227CE4EA007D61CD /* SwiftSoup+Table.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SwiftSoup+Table.swift"; sourceTree = "<group>"; };
 		99269DB6227CE54F007D61CD /* TableMiner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableMiner.swift; sourceTree = "<group>"; };
+		9934600D2315FAA7004D6724 /* QuestionInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QuestionInterfaceController.swift; sourceTree = "<group>"; };
 		99628FD9230F640F00205EAB /* WristQuiz WatchKit App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "WristQuiz WatchKit App.entitlements"; sourceTree = "<group>"; };
 		996C2E5022B0C48500209302 /* InterfaceElement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceElement.swift; sourceTree = "<group>"; };
 		99804245225BF7E90008B67F /* WristQuiz.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WristQuiz.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,7 +126,6 @@
 		9980425F225BF7F30008B67F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99804261225BF7F40008B67F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		99804266225BF7F40008B67F /* WristQuiz WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "WristQuiz WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		9980426B225BF7F40008B67F /* ThreeOptionInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThreeOptionInterfaceController.swift; sourceTree = "<group>"; };
 		9980426D225BF7F40008B67F /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		9980426F225BF7F40008B67F /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		99804271225BF7F50008B67F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -243,8 +242,7 @@
 			children = (
 				99993721230D11DA00514FB1 /* GameSessionTrackingInterfaceController.swift */,
 				990017272269504D00A06AC0 /* MainInterfaceController.swift */,
-				990017292269700900A06AC0 /* TriviaQuestionInterfaceController.swift */,
-				9980426B225BF7F40008B67F /* ThreeOptionInterfaceController.swift */,
+				9934600D2315FAA7004D6724 /* QuestionInterfaceController.swift */,
 				9980426D225BF7F40008B67F /* ExtensionDelegate.swift */,
 				9980426F225BF7F40008B67F /* NotificationController.swift */,
 				99804271225BF7F50008B67F /* Assets.xcassets */,
@@ -476,10 +474,10 @@
 				9900172C2269B17200A06AC0 /* Util.swift in Sources */,
 				9980426E225BF7F40008B67F /* ExtensionDelegate.swift in Sources */,
 				990017282269504D00A06AC0 /* MainInterfaceController.swift in Sources */,
-				9900172A2269700900A06AC0 /* TriviaQuestionInterfaceController.swift in Sources */,
 				99993722230D11DA00514FB1 /* GameSessionTrackingInterfaceController.swift in Sources */,
+				9934600E2315FAA7004D6724 /* QuestionInterfaceController.swift in Sources */,
+				9934600F23161EB8004D6724 /* SovereignStateFlagsCollection.swift in Sources */,
 				99008CA6228A37D900D41D54 /* Style.swift in Sources */,
-				9980426C225BF7F40008B67F /* ThreeOptionInterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

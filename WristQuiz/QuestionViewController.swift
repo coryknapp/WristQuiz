@@ -43,9 +43,7 @@ class QuestionViewController : GameSessionTrackingViewController{
             secondButton!.setTitle(gameSession!.currentQuestion!.stringOptions![1], for: UIControl.State.normal)
             thirdButton!.setTitle(gameSession!.currentQuestion!.stringOptions![2], for: UIControl.State.normal)
             fourthButton?.setTitle(gameSession!.currentQuestion!.stringOptions![4], for: UIControl.State.normal)
-        } else if gameSession?.currentQuestion?.imageOptions != nil {
-            print(gameSession!.currentQuestion!.imageOptions![0].size.debugDescription)
-            
+        } else if gameSession?.currentQuestion?.imageOptions != nil {            
             firstButton!.setTitle(nil, for: UIControl.State.normal)
             secondButton!.setTitle(nil, for: UIControl.State.normal)
             thirdButton!.setTitle(nil, for: UIControl.State.normal)

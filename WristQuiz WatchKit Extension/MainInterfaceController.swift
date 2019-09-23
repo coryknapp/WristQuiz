@@ -27,7 +27,8 @@ class MainInterfaceController: GameSessionTrackingViewController {
             
             // init session
             gameSession = GameSession()
-            gameSession!.triviaCollections.append( PresidentCollection() )
+            //gameSession!.triviaCollections.append( PresidentCollection() )
+            gameSession!.triviaCollections.append( SovereignStateFlagsCollection() )
 
         }else{
             // we're coming back from answering a question
@@ -70,18 +71,20 @@ class MainInterfaceController: GameSessionTrackingViewController {
         countDownTimerText.setText(String(countDownSecond))
     }
     
-    func setUpNewQuestion(){        
-        if( gameSession == nil ){
-            //set up new gameSession
-            gameSession = GameSession()
-            gameSession?.triviaCollections = [PresidentCollection()];
-        }
- 
+    func setUpNewQuestion(){
         gameSession?.prepareNewQuestion()
         
         timer.invalidate()
         
         // assuming three response questions for now
-        WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: "ThreeOptionInterfaceController", context: gameSession!)])
+        WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: controllerName(forQuestion: gameSession!.currentQuestion!), context: gameSession!)])
+    }
+    
+    func controllerName(forQuestion question: TriviaQuestion) -> String {
+        if question.stringOptions != nil {
+            return "ThreeOptionInterfaceController"
+        } else {
+            return "FourImageOptionInterfaceController"
+        }
     }
 }

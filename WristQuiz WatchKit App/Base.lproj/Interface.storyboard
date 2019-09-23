@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="14490.70" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="KeV-qd-og0" pageOrientation="vertical">
-    <device id="watch38" orientation="portrait">
+    <device id="watch44" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -11,7 +11,7 @@
         <!--ThreeOptionInterfaceController-->
         <scene sceneID="aou-V4-d1y">
             <objects>
-                <controller identifier="ThreeOptionInterfaceController" fullBounds="YES" fullScreen="YES" id="AgC-eL-Hgc" customClass="ThreeOptionInterfaceController" customModule="WristQuiz_WatchKit_Extension">
+                <controller identifier="ThreeOptionInterfaceController" fullBounds="YES" fullScreen="YES" id="AgC-eL-Hgc" customClass="QuestionInterfaceController" customModule="WristQuiz_WatchKit_Extension">
                     <items>
                         <group width="1" alignment="left" id="ueU-1d-w7I">
                             <items>
@@ -48,7 +48,7 @@
                     </connections>
                 </controller>
             </objects>
-            <point key="canvasLocation" x="17" y="402"/>
+            <point key="canvasLocation" x="17" y="1080"/>
         </scene>
         <!--MainInterfaceController-->
         <scene sceneID="lCr-ZC-eWU">
@@ -103,6 +103,62 @@
                 <controller id="eXb-UN-Cd0" customClass="NotificationController" customModule="WristQuiz_WatchKit_App" customModuleProvider="target"/>
             </objects>
             <point key="canvasLocation" x="876" y="321"/>
+        </scene>
+        <!--FourImageOptionInterfaceController-->
+        <scene sceneID="C1i-Tc-nr3">
+            <objects>
+                <controller identifier="FourImageOptionInterfaceController" fullBounds="YES" fullScreen="YES" id="Q37-8J-lYI" customClass="QuestionInterfaceController" customModule="WristQuiz_WatchKit_Extension">
+                    <items>
+                        <group width="1" alignment="left" id="Udb-RD-hdd">
+                            <items>
+                                <label width="1" alignment="left" text="Q?" textAlignment="left" numberOfLines="8" id="AIB-91-RRc">
+                                    <color key="textColor" red="0.0" green="1" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                </label>
+                            </items>
+                        </group>
+                        <separator alignment="left" id="tD0-3k-qkk">
+                            <color key="color" red="0.0" green="1" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </separator>
+                        <group width="1" alignment="left" id="4d4-xB-8mY">
+                            <items>
+                                <button width="86" alignment="left" title="Next" id="8qL-yC-wh6">
+                                    <connections>
+                                        <action selector="firstButtonPressed" destination="Q37-8J-lYI" id="Sxk-QG-t4v"/>
+                                    </connections>
+                                </button>
+                                <button width="77" alignment="right" title="Button" id="Ejh-Jt-yeP">
+                                    <connections>
+                                        <action selector="secondButtonPressed" destination="Q37-8J-lYI" id="l86-xT-2an"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                        <group width="1" alignment="left" id="ucA-NL-QNG">
+                            <items>
+                                <button width="73" alignment="left" title="Next" id="z1y-qU-RzW">
+                                    <connections>
+                                        <action selector="thirdButtonPressed" destination="Q37-8J-lYI" id="uQI-b9-rZ1"/>
+                                    </connections>
+                                </button>
+                                <button width="84" alignment="right" title="Next" id="vIU-CD-36r">
+                                    <connections>
+                                        <action selector="forthButtonPressed" destination="Q37-8J-lYI" id="yeX-Op-K1n"/>
+                                    </connections>
+                                </button>
+                            </items>
+                        </group>
+                    </items>
+                    <connections>
+                        <outlet property="firstButton" destination="Ejh-Jt-yeP" id="CqZ-WP-F87"/>
+                        <outlet property="fourthButton" destination="vIU-CD-36r" id="L9S-GO-Jrm"/>
+                        <outlet property="questionField" destination="AIB-91-RRc" id="Q2o-3X-hxP"/>
+                        <outlet property="secondButton" destination="8qL-yC-wh6" id="9JQ-bb-gBI"/>
+                        <outlet property="thirdButton" destination="z1y-qU-RzW" id="RV3-cW-ege"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="362.91304347826087" y="1079.9553571428571"/>
         </scene>
     </scenes>
 </document>

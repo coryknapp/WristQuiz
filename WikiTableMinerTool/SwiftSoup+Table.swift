@@ -27,55 +27,55 @@ extension SwiftSoup.Element{
         return try self.select("th")
     }
     
-    func makeTableRowIterator() throws -> TableRowIterator{
-        assert(self.tag().getName() == "table")
-        return TableRowIterator(self)
-    }
+//    func makeTableRowIterator() throws -> TableRowIterator{
+//        assert(self.tag().getName() == "table")
+//        return TableRowIterator(self)
+//    }
     
-    struct TableRowIterator : IteratorProtocol{
-        typealias Element = SwiftSoup.Element
-        mutating func next() -> Element? {
-            let nextElem = internalIterator.next()
-            if(nextElem == nil){
-                return nil
-            }
-            //don't return header rows
-            if(try! nextElem!.select("th").array().count == 0){
-                return nextElem
-            }
-            return self.next()
-        }
-        
-        var internalIterator: ElementsIterator
-        init(_ tableElement: Element) {
-            assert(tableElement.tag().getName() == "table")
-            internalIterator = try! tableElement.select("tr").makeIterator()
-        }
-    }
+//    struct TableRowIterator : IteratorProtocol{
+//        typealias Element = SwiftSoup.Element
+//        mutating func next() -> Element? {
+//            let nextElem = internalIterator.next()
+//            if(nextElem == nil){
+//                return nil
+//            }
+//            //don't return header rows
+//            if(try! nextElem!.select("th").array().count == 0){
+//                return nextElem
+//            }
+//            return self.next()
+//        }
+//
+//        var internalIterator: SwiftSoup.ElementsIterator
+//        init(_ tableElement: Element) {
+//            assert(tableElement.tag().getName() == "table")
+//            internalIterator = try! tableElement.select("tr").makeIterator()
+//        }
+//    }
     
-    func makeTableCellIterator() throws -> TableCellIterator{
-        assert(self.tag().getName() == "tr")
-        return TableCellIterator(self)
-    }
-    
-    struct TableCellIterator : IteratorProtocol{
-        typealias Element = SwiftSoup.Element
-        mutating func next() -> Element? {
-            let nextElem = internalIterator.next()
-            if(nextElem == nil){
-                return nil
-            }
-            //don't return header rows
-            if(try! nextElem!.select("th").array().count == 0){
-                return nextElem
-            }
-            return self.next()
-        }
-        
-        var internalIterator: ElementsIterator
-        init(_ rowElement: Element) {
-            assert(rowElement.tag().getName() == "tr")
-            internalIterator = try! rowElement.select("td").makeIterator()
-        }
-    }
+//    func makeTableCellIterator() throws -> TableCellIterator{
+//        assert(self.tag().getName() == "tr")
+//        return TableCellIterator(self)
+//    }
+//
+//    struct TableCellIterator : IteratorProtocol{
+//        typealias Element = SwiftSoup.Element
+//        mutating func next() -> Element? {
+//            let nextElem = internalIterator.next()
+//            if(nextElem == nil){
+//                return nil
+//            }
+//            //don't return header rows
+////            if(try! nextElem!.select("th").array().count == 0){
+//                return nextElem
+//            }
+//            return self.next()
+//        }
+//
+//        var internalIterator: IndexingIterator<Element>
+//        init(_ rowElement: Element) {
+//            assert(rowElement.tag().getName() == "tr")
+//            internalIterator = try! rowElement.select("td").makeIterator()
+//        }
+//    }
 }

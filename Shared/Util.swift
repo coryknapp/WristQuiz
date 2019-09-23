@@ -81,20 +81,3 @@ extension Array where Element: Equatable{
         return false
     }
 }
-
-#if os(iOS)
-extension TriviaQuestion.Image{
-    convenience init(withId: String){
-        self.init(contentsOfFile: Bundle.main.bundlePath + "/Data/" + withId)!
-    }
-}
-#endif
-
-#if os(watchOS)
-extension TriviaQuestion.Image{
-    convenience init(withId: String){
-        //XXX
-        self.init(imageName: withId)
-    }
-}
-#endif

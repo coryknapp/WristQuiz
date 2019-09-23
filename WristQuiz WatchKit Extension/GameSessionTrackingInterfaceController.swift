@@ -19,4 +19,8 @@ class GameSessionTrackingViewController : WKInterfaceController {
             gameSession = (context as! GameSession);
         }
     }
+    
+    func displayResult(){
+        WKInterfaceController.reloadRootControllers(withNamesAndContexts: [(name: "MainInterfaceController", context: gameSession!)])
+    }
 }
